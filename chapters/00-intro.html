@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>序章 なぜ資料の見た目が大事か｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="intro">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">序章 見た目が大事な理由</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">INTRODUCTION</p>
+      <h1>なぜ資料の見た目が大事か</h1>
+    </div>
+    <p>「資料は中身が大事で、見た目はおまけ」と考える人は少なくありません。たしかに、中身のない資料をきれいに飾っても意味はありません。しかし、中身がしっかりしているのに伝わらない資料は、職場で毎日のように生まれています。</p>
+    <p>この本では、資料の見た目を<strong>読み手の負担を減らす技術</strong>として扱います。どこから読めばよいか迷わせない、色や記号の意味を考えさせない、結論を探させない。見た目を整えるとは、読み手が内容そのものに集中できるように、余計な仕事を取り除くことです。</p>
+    <p>序章では、見た目で伝わり方がどれほど変わるのかを体験し、この本で学ぶことの全体像を確認します。</p>
+  </section>
+
+  <section class="sec" id="same">
+    <h2>同じ内容でも、見せ方で伝わり方が変わる</h2>
+    <p>下の2枚のスライドは、まったく同じ内容を伝えています。ボタンを押すとスライドが3秒だけ表示されるので、その間に結論を読み取れるか試してみてください。切替でもう一方の版も試せます。</p>
+
+    <div class="demo" id="demo-same">
+      <p class="demo-label">見本　3秒テスト</p>
+      <div class="slide"><div class="svg-wrap"></div><div class="mask">ボタンを押すと、スライドが3秒だけ表示されます</div></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>よくある版</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>整えた版</button>
+      </div>
+      <p style="margin:12px 0 0"><button class="btn primary flash">3秒だけ見る</button></p>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>会議の資料は、多くの場合このくらいの時間で「読むか、読み流すか」を判断されています。よくある版では、タイトルが「物流コストについて」というテーマ名で、結論は中央揃えの長い文章の中に埋もれています。色もあちこちに使われているので、目がどこに止まればよいのか分かりません。</p>
+    <p>整えた版では、タイトルそのものが結論になっており、一番大事な数字が大きく、1か所だけ色を変えて示されています。読み手は探さなくても、結論に目が向きます。どちらも同じ情報を持っているのに、伝わる量がまったく違うのです。</p>
+    <div class="rule">
+      <span class="label">この本の基準</span>
+      <p>3秒見て結論が分かるか。迷ったら、この基準で資料を見直す。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="load">
+    <h2>見た目が乱れると、読み手の頭が疲れる</h2>
+    <p>人が一度に頭の中で扱える情報の量には限りがあります。資料を読むとき、その限られた容量は「内容を理解すること」だけに使われるわけではありません。どこから読むかを探したり、色の意味を照らし合わせたり、バラバラな配置から関係を読み取ったりすることにも使われます。</p>
+
+    <div class="demo" id="demo-load">
+      <p class="demo-label">見本　読み手の頭の使い方（イメージ）</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>整っていない資料</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>整った資料</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <div class="term">
+      <b>認知負荷（にんちふか）</b>
+      <p>情報を理解するときに、頭にかかる負担のこと。内容そのものの難しさとは別に、見せ方の分かりにくさによっても負担は増えます。</p>
+    </div>
+    <p>見せ方による負担は、内容と関係のない「余計な仕事」です。読み手は余計な仕事に疲れると、内容を理解する前に読むのをやめてしまいます。逆に言えば、見た目を整えることは、内容を理解するための容量を読み手に返すことなのです。</p>
+  </section>
+
+  <section class="sec" id="ai">
+    <h2>AIに資料を作らせる時代に、型を知る意味</h2>
+    <p>今はAIに頼めば、それらしいスライドが数十秒でできあがります。それでも型を知っておく価値は残ります。AIの出力が「なんとなくイマイチ」なとき、どこが悪いのかを言葉にできなければ、直してもらうことができないからです。</p>
+    <p>型を知っていると、AIへの修正の指示が具体的になります。指示が具体的になれば、AIの直しも一度で的確に決まります。</p>
+    <div class="cards">
+      <div class="card">
+        <b><span class="tag ng">NG</span>型を知らないときの指示</b>
+        <p>「もう少し見やすくしてください」「もっとかっこよくしてください」</p>
+      </div>
+      <div class="card">
+        <b><span class="tag ok">OK</span>型を知っているときの指示</b>
+        <p>「タイトルを結論の文にしてください」「強調は削減額の1か所だけにして、他の棒はグレーにしてください」「本文を左揃えにして、左端をそろえてください」</p>
+      </div>
+    </div>
+    <p>この本の各章の終わりには、その章の型をAIに守らせるための指示文を載せています。最初からその指示を渡しておけば、直す手間そのものが減ります。</p>
+  </section>
+
+  <section class="sec" id="map">
+    <h2>この本で学ぶこと</h2>
+    <p>この本は、資料を作る順番に沿って章を並べています。最初から順に読むのがおすすめですが、すぐに効果を出したいときは、第1章（メッセージ）、第5章（配色）、第7章（グラフ）から読むのも効果的です。この3つは、直すと見違えるほど変わる部分です。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>段階</th><th>章</th><th>身につくこと</th></tr></thead>
+        <tbody>
+          <tr><td>はじめに</td><td>第0章</td><td>作る前に、目的と読み手と結論を決める</td></tr>
+          <tr><td>組み立てる</td><td>第1〜4章</td><td>結論の書き方、配置、視線の流れ、強弱の付け方</td></tr>
+          <tr><td>見た目を整える</td><td>第5〜8章</td><td>配色、文字、グラフ、図解と表</td></tr>
+          <tr><td>仕上げる</td><td>第9章</td><td>提出前の最終確認</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト：資料を見直す5つの問い</h2>
+    <p>細かい型を学ぶ前に、どんな資料にも使える問いです。資料ができたら、一度手を止めてこの5つを確認してください。</p>
+    <ul class="checklist" data-key="intro">
+      <li><label><input type="checkbox" data-id="3sec">3秒見て、結論が分かるか</label></li>
+      <li><label><input type="checkbox" data-id="where">どこから読めばよいか、迷わないか</label></li>
+      <li><label><input type="checkbox" data-id="color">色や記号の意味を、考えなくても分かるか</label></li>
+      <li><label><input type="checkbox" data-id="reduce">なくても伝わる要素が残っていないか</label></li>
+      <li><label><input type="checkbox" data-id="action">読んだ人が次に何をすればよいか分かるか</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="intro">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>どんな資料にも共通する基本ルールです。AIに資料を頼むときの依頼文に添えて使います。</p>
+    <div class="copybox" data-prompt="intro"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>下のスライドを3秒見て、結論を言えるか試してください。そのうえで、結論が伝わりにくい原因を2つ以上考えてから、答えを見てください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>一番の原因は、結論がどこにも書かれていないことです。タイトルは「現状について」というテーマ名で、本文の最後まで読まないと「シフトを見直す」という結論にたどり着けません。直した例では、結論をそのままタイトルにしました。</p>
+        <p>次に、数字の比較を文章から取り出しました。現状・見直し後・目標の3つの数字が文章の中に散らばっていると、読み手は頭の中で並べ替える必要があります。横に並べて置けば、比べる作業は目に任せられます。</p>
+        <p>最後に、赤い囲みと下線の「早急な対応が必要！」をやめました。強い装飾は不安をあおるだけで、何をすべきかは伝えません。代わりに、具体的な打ち手を一文で書いています。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/intro.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 /* 章の一覧。ready: true の章だけ目次からリンクする */
 window.SHIRYO_CHAPTERS = [
-  { id: "intro", no: "序章", title: "なぜ資料の見た目が大事か", desc: "見た目は読み手の負担を減らす技術", href: "chapters/00-intro.html", ready: false, group: "はじめに" },
-  { id: "ch00", no: "第0章", title: "作る前の設計", desc: "目的と読み手、ストーリー、資料の種類", href: "chapters/00-planning.html", ready: false, group: "はじめに" },
+  { id: "intro", no: "序章", title: "なぜ資料の見た目が大事か", desc: "見た目は読み手の負担を減らす技術", href: "chapters/00-intro.html", ready: true, sections: 8, group: "はじめに" },
+  { id: "ch00", no: "第0章", title: "作る前の設計", desc: "目的と読み手、ストーリー、資料の種類", href: "chapters/00-planning.html", ready: true, sections: 11, group: "はじめに" },
   { id: "ch01", no: "第1章", title: "メッセージと構成", desc: "1スライド1メッセージ、メッセージライン", href: "chapters/01-message.html", ready: false, group: "組み立てる" },
   { id: "ch02", no: "第2章", title: "レイアウト", desc: "近接・整列・反復・対比、余白", href: "chapters/02-layout.html", ready: false, group: "組み立てる" },
   { id: "ch03", no: "第3章", title: "視線の流れ", desc: "Z型・F型、重要情報の置き場所", href: "chapters/03-eye-flow.html", ready: false, group: "組み立てる" },

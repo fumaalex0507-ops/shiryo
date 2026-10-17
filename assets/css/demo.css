@@ -225,3 +225,79 @@ input[type="range"] {
 /* 色覚シミュレーション用フィルタ */
 .sim-d { filter: url(#cvd-d); }
 .sim-p { filter: url(#cvd-p); }
+
+/* 小さいスライドを並べる */
+.thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.thumbs .slide { border-radius: 4px; }
+.thumbs figure { margin: 0; }
+.thumbs figcaption { font-size: 12px; color: var(--text-sub); margin-top: 4px; line-height: 1.5; }
+
+/* ステップ送り */
+.stepper-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.stepper-ctrl .btn { min-width: 64px; }
+.stepper-ctrl .pos {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-sub);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 入力欄 */
+.field { display: grid; gap: 4px; margin-top: 12px; font-size: 13px; color: var(--text-sub); }
+.field input, .field select {
+  font: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+}
+.result-line {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* 3秒テスト */
+.slide .mask {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EEF0F3;
+  color: #5B6470;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 16px;
+}
+.slide .mask[hidden] { display: none; }
+
+/* 間違い探し */
+.slide .hit { cursor: pointer; }
+.found-count { font-weight: 700; color: var(--text); }
+
+/* 小さな見出し付きの説明カード */
+.cards { display: grid; gap: 10px; margin: 16px 0; }
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.card b { display: block; margin-bottom: 2px; }
+.card p { margin: 0; font-size: 15px; color: var(--text-sub); }
+.card .slide { margin: 10px 0 8px; }
+.svg-wrap { width: 100%; height: 100%; }

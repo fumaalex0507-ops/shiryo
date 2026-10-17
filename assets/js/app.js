@@ -35,6 +35,18 @@
     return select;
   }
 
+  /* ---------- AIへの指示文を差し込む ---------- */
+  function initPrompts() {
+    var list = window.SHIRYO_PROMPTS || [];
+    document.querySelectorAll(".copybox[data-prompt]").forEach(function (box) {
+      var item = list.filter(function (p) { return p.id === box.dataset.prompt; })[0];
+      if (!item) return;
+      var id = "prompt-" + item.id;
+      box.innerHTML = '<div id="' + id + '"></div><button class="btn" data-copy-target="' + id + '">コピー</button>';
+      box.querySelector("#" + id).textContent = item.text;
+    });
+  }
+
   /* ---------- コピー ---------- */
   function copyText(text) {
     if (navigator.clipboard && window.isSecureContext) {
@@ -238,6 +250,7 @@
   window.Shiryo = { store: store, bindSeg: bindSeg, copyText: copyText };
 
   document.addEventListener("DOMContentLoaded", function () {
+    initPrompts();
     initCopyButtons();
     initChecklists();
     initReveal();

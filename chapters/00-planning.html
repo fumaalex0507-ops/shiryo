@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第0章 作る前の設計｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch00">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第0章 作る前の設計</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 0</p>
+      <h1>作る前の設計</h1>
+    </div>
+    <p>PowerPointを開いて、とりあえず1枚目から作り始める。多くの人がそうしていますが、見た目の整わない資料の多くは、実はこの時点で失敗が決まっています。何のための資料か決まっていないと、何を載せて何を削るかの判断ができないからです。</p>
+    <p>この章では、手を動かす前に決めておくべきことを扱います。決めることは<strong>目的・読み手・結論・使い方</strong>の4つだけです。ここが決まると、構成も、文字の量も、強調すべき数字も、自然と決まっていきます。</p>
+    <p>AIに資料を作らせるときも同じです。この4つを伝えずに頼むと、AIは「なんでも載っている平均的な資料」を返してきます。</p>
+  </section>
+
+  <section class="sec" id="purpose">
+    <h2><span class="tag ng">NG</span>誰に何をしてほしいかが決まっていない</h2>
+    <p>目的があいまいなまま作ると、知っていることを全部並べた資料になりがちです。経緯、関係者、効果、課題、スケジュール。どれも正しい情報ですが、読み手は「で、私は何をすればいいの？」と思いながら読むことになります。</p>
+
+    <div class="demo" id="demo-purpose">
+      <p class="demo-label">見本　同じテーマを、読み手に合わせて作る</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>全部入り</button>
+        <button data-value="boss" aria-pressed="false"><span class="mark" style="color:var(--ok)">OK</span>部長向け</button>
+        <button data-value="field" aria-pressed="false"><span class="mark" style="color:var(--ok)">OK</span>現場向け</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人は資料を読むとき、無意識に「これは自分に何を求めているのか」という問いを持っています。その答えが見つからないと、すべての情報を同じ重さで読むしかなく、何も頭に残りません。目的がはっきりしている資料は、その問いに最初に答えてくれるので、残りの情報を「その判断の材料」として整理しながら読めます。</p>
+    <p>部長向けと現場向けでは、同じ共同配送の話でも載せる情報がまったく違います。部長が知りたいのは承認するかどうかの判断材料で、現場が知りたいのは自分の作業がどう変わるかです。読み手が違えば、正解の資料も違うのです。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>作る前に「誰に」「何をしてほしいか」を1文で書く。その1文に関係しない情報は、本編から外す。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="format">
+    <h2><span class="tag ng">NG</span>投影用と配布用を取り違えている</h2>
+    <p>資料には、画面に映して話しながら見せる「投影用」と、配って読んでもらう「配布用」があります。どちらにも同じ作り方をしてしまうのが、よくある失敗です。</p>
+
+    <div class="demo" id="demo-format">
+      <p class="demo-label">見本　同じ内容を、使い方に合わせて作る</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="screen" aria-pressed="true">投影用の作り</button>
+        <button data-value="paper" aria-pressed="false">配布用の作り</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>投影用の資料は、話し手の説明と一緒に見るものです。聞き手は耳で説明を聞きながら目でスライドを見るので、スライドの文字が多いと、聞くことと読むことを同時にしなければならず、どちらも中途半端になります。だから投影用は、文字を減らして大きく見せます。</p>
+    <p>配布用の資料は、話し手がいない場所で読まれます。投影用の作りのまま配ると、肝心の「なぜそう言えるのか」が抜け落ちてしまいます。配布用には、理由や数字の根拠、出典まで書いておく必要があります。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th></th><th>投影用</th><th>配布用</th></tr></thead>
+        <tbody>
+          <tr><td>文字の量</td><td>少なく、キーワード中心</td><td>文章で理由まで書く</td></tr>
+          <tr><td>文字の大きさ</td><td>本文24pt以上</td><td>本文14〜18pt</td></tr>
+          <tr><td>図や数字</td><td>1枚に1つ、大きく</td><td>表や補足も載せてよい</td></tr>
+          <tr><td>出典・注記</td><td>最小限</td><td>必ず書く</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>社内の会議資料は、投影しながら後で配られることも多いはずです。その場合は配布用を基本にし、投影するスライドでは結論と数字が大きく見えるようにしておくと、両方に耐えられます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>作る前に「投影か、配布か」を決める。両方なら配布用で作り、結論と数字だけは大きく見せる。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="story">
+    <h2>話の流れは「現状→課題→打ち手→効果→お願い」</h2>
+    <p>何を載せるかが決まったら、次は順番です。社内の報告や提案なら、迷ったら「現状→課題→打ち手→効果→お願い」の流れに当てはめてみてください。読み手が自然に持つ疑問の順番に沿っているので、途中で置いていかれることがありません。</p>
+
+    <div class="demo" id="demo-story">
+      <p class="demo-label">見本　話の流れを1つずつ見る</p>
+      <div class="slide"></div>
+      <div class="stepper-ctrl">
+        <button class="btn prev">前へ</button>
+        <span class="pos"></span>
+        <button class="btn next">次へ</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>読み手は「今どうなっているの？」「何が問題なの？」「どうするの？」「それでどうなるの？」「で、私は何をすればいいの？」と順に考えます。この順番を飛ばすと、たとえば現状の説明なしに打ち手を出された読み手は、「そもそもなぜそれが必要なのか」で引っかかり、先に進めなくなります。</p>
+    <p>部長など忙しい読み手には、この流れの前に「結論とお願い」を1枚で先に見せる方法もあります。結論を先に知ってから各論を読むほうが、何のための説明かが分かって理解しやすくなるからです。これは第1章で詳しく扱います。</p>
+
+    <h3>枚数は、時間から逆算する</h3>
+    <p>説明する時間が決まっているなら、本編は1枚あたり1.5〜2分を目安にします。1枚を1分以下で次々にめくると、聞き手は内容を消化しきれません。</p>
+    <div class="demo" id="demo-time">
+      <p class="demo-label">計算　説明時間からの枚数の目安</p>
+      <div class="control">
+        <div class="control-row"><span>説明に使える時間</span><output>-</output></div>
+        <input type="range" min="3" max="30" step="1" value="10" aria-label="説明に使える時間（分）">
+      </div>
+      <div class="result-line"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="numbers">
+    <h2><span class="tag ng">NG</span>数字に単位・時点・出典がない</h2>
+    <p>作った本人には当たり前でも、読み手には分からない情報があります。その代表が、数字の単位や時点です。物流の資料には、率、件数、金額、ポイント差など、似た数字がたくさん出てきます。</p>
+
+    <div class="demo" id="demo-numbers">
+      <p class="demo-label">見本　数字の書き方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>数字だけ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>単位・時点・出典つき</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>単位のない数字を見た読み手は、頭の中で「たぶん%だろう」と推測しながら読み進めます。その推測が外れていれば誤解のまま会議が進みますし、推測に自信がなければ、数字そのものを信用しなくなります。どちらにしても、数字が本来持っている説得力が失われます。</p>
+    <p>特に「%」と「ポイント」の違いは要注意です。80%が85%になったとき、増えたのは「5ポイント」であって「5%」ではありません（5%増なら84%です）。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>数字には単位を付け、表やグラフには時点と出典を必ず添える。独自の指標は定義も書く。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="writing">
+    <h2><span class="tag ng">NG</span>1文が長く、回りくどい</h2>
+    <p>資料の文章は、読み物の文章とは違います。読み手は内容を確かめながら、ときには何度も読み返します。1文が長いと、その読み返しのたびに頭の中で文を組み立て直すことになります。</p>
+
+    <div class="demo" id="demo-writing">
+      <p class="demo-label">見本　同じ内容の書き方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>長い1文</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>短い3文</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人は文を読むとき、主語を覚えたまま述語が出てくるのを待っています。主語と述語の間が長いと、その間ずっと主語を頭に保持しなければならず、負担が大きくなります。「〜における」「〜について検討を行う」のような言い回しも、文字数が増えるだけで意味は増えません。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>1文には1つの内容だけを書く。「〜を行う」は「〜する」、「〜について検討を行う」は「〜を検討する」と短くする。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="template">
+    <h2>すぐ使える型：設計メモ</h2>
+    <p>作り始める前に、次の項目を埋めてみてください。入力した内容は下にまとまるので、コピーしてAIへの依頼文に貼ったり、自分のメモとして資料の最初に残したりできます。</p>
+    <div class="demo" id="demo-memo">
+      <p class="demo-label">入力　設計メモ</p>
+      <label class="field">目的（読み手にしてほしいこと）<input name="purpose" placeholder="例：共同配送の試行を承認してもらう"></label>
+      <label class="field">読み手（誰が・どの程度知っているか）<input name="reader" placeholder="例：物流部長、前提知識あり"></label>
+      <label class="field">結論（一番伝えたいことを1文で）<input name="conclusion" placeholder="例：共同配送で配送コストを年間8%削減できる"></label>
+      <label class="field">してほしいこと<input name="action" placeholder="例：4月からの試行を承認してほしい"></label>
+      <label class="field">使い方
+        <select name="use"><option>投影と配布の両方</option><option>投影のみ</option><option>配布のみ</option></select>
+      </label>
+      <label class="field">説明時間（分）<input name="minutes" inputmode="numeric" placeholder="例：10"></label>
+      <div class="copybox"><div id="memo-out"></div><button class="btn" data-copy-target="memo-out">コピー</button></div>
+    </div>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの進め方</h2>
+    <p>いきなりスライドの見た目を作り込むと、話の流れを直したくなったときに大きな手戻りが出ます。先に骨組みだけを作り、流れが固まってから見た目を整えるのが近道です。</p>
+    <ol class="steps">
+      <li>「表示」タブ →「アウトライン表示」に切り替える。</li>
+      <li>左側のアウトライン欄に、各スライドのタイトルだけを1行ずつ入力する。Enterで次のスライドが作られます。</li>
+      <li>タイトルだけを上から読み、「現状→課題→打ち手→効果→お願い」の流れになっているか確かめる。</li>
+      <li>流れが固まってから「標準」表示に戻り、各スライドの中身と見た目を作る。</li>
+    </ol>
+    <p>話す内容や補足は、スライドではなく下の「ノート」欄に書いておくと、投影用のスライドを文字だらけにせずに済みます。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <p>作り始める前と、作り終えた後に確認する項目です。</p>
+    <ul class="checklist" data-key="ch00">
+      <li><label><input type="checkbox" data-id="purpose">誰に何をしてほしいかを、1文で言える</label></li>
+      <li><label><input type="checkbox" data-id="conclusion">一番伝えたい結論を、1文で言える</label></li>
+      <li><label><input type="checkbox" data-id="use">投影用か配布用かを決めて、文字の量を合わせている</label></li>
+      <li><label><input type="checkbox" data-id="story">現状→課題→打ち手→効果→お願いの流れになっている</label></li>
+      <li><label><input type="checkbox" data-id="ask">最後に、読み手にしてほしいことが書いてある</label></li>
+      <li><label><input type="checkbox" data-id="unit">数字に単位があり、表やグラフに時点と出典がある</label></li>
+      <li><label><input type="checkbox" data-id="short">1文に1つの内容になっている</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch00">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIに資料を頼むとき、いきなり作らせずに、まず目的や読み手を確認させるための指示文です。上の設計メモと一緒に渡すと、さらに精度が上がります。</p>
+    <div class="copybox" data-prompt="ch00"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>下は、物流部長に「在庫削減の取り組み」を相談するための構成案です。このまま作り始めると、どんな資料になりそうでしょうか。問題点を考えてから、答えを見てください。</p>
+    <div class="practice">
+      <p class="demo-label">課題の構成案</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>課題の構成案は、目的が書かれていないため、項目がすべてテーマ名になっています。「背景」「現状」「その他の検討事項」では、それぞれのスライドで何を言うのかが決まっていません。このまま作ると、知っていることを全部並べた資料になります。</p>
+        <p>直した例では、まず資料全体の結論を「在庫を2割減らし、保管料の値上げ分を吸収する」と決めました。そのうえで「現状→課題→打ち手→効果→お願い」の5つに絞り、各項目に言いたいことを1文で書いています。他社の事例やスケジュールのような補足は、本編から外して参考資料に回します。</p>
+        <p>最後の「お願い」が、部長に判断してほしいことです。これがあることで、部長は資料を「承認するかどうか」という視点で読めるようになります。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch00.js"></script>
+</body>
+</html>
