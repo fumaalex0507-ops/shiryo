@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第5章 配色｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch05">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第5章 配色</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <!-- 導入 -->
+  <section class="sec" id="intro">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 5</p>
+      <h1>配色</h1>
+    </div>
+    <p>資料を開いた瞬間、読み手は文字を読むより先に色を見ています。どこが濃く、どこが明るく、どこだけ違う色なのか。色は、読み手が「最初にどこを見るか」を決める、最も強い手がかりです。</p>
+    <p>だからこそ、色は飾りとして足すものではなく、<strong>役割を決めて使うもの</strong>です。「この色は見出し」「この色は一番伝えたい数字」と決まっていれば、読み手は色を見ただけで情報の構造をつかめます。逆に役割のない色が増えるほど、読み手は「この色には意味があるのか」と考えさせられ、内容の理解が遅れます。</p>
+    <p>この章では、配色でよくある3つの失敗を見たあと、色の数と面積の決め方、そのまま使えるパレットを紹介します。</p>
+  </section>
+
+  <!-- NG1 -->
+  <section class="sec" id="overuse">
+    <h2><span class="tag ng">NG</span>色を使いすぎて、何も目立たない</h2>
+    <p>拠点別の配送遅延件数をグラフにするとき、棒を1本ずつ違う色にしてしまうことがあります。PowerPointやExcelで「要素を塗り分ける」を選ぶと自動でそうなるので、気づかないうちに作っていることも多い失敗です。カラフルで華やかに見えますが、読み手は「どこを見ればいいのか」が分からなくなります。</p>
+
+    <div class="demo" id="demo-overuse">
+      <p class="demo-label">見本　拠点別の配送遅延件数</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>全部に色</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>1本だけ色</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人の目には、周りと違うものを一瞬で見つける働きがあります。灰色の中に1つだけ色があれば、読もうとしなくても目がそこへ向きます。ところが全部の棒に色を付けると「周りとの違い」が消え、どの棒も同じ強さで目を引き合ってしまいます。</p>
+    <div class="term">
+      <b>前注意的処理（ぜんちゅういてきしょり）</b>
+      <p>注意を向けて読み始める前に、色・大きさ・向きなどの違いを目が自動で拾う働き。0.2秒ほどで起きるため、資料では「最初に目に入るもの」を決める力になります。</p>
+    </div>
+    <p>OK版では、何も説明しなくても「C拠点が問題だ」と伝わります。色は飾りではなく、「ここを見てください」という指示です。指示が5つあれば、どれも指示として機能しません。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>伝えたい1本だけにアクセントカラーを使い、残りはグレーにする。</p>
+    </div>
+  </section>
+
+  <!-- NG2 -->
+  <section class="sec" id="redgreen">
+    <h2><span class="tag ng">NG</span>赤と緑だけで、良し悪しを区別している</h2>
+    <p>信号の色にならって、目標達成を緑、未達を赤で塗り分ける資料はよく見かけます。作った本人には分かりやすいのですが、読み手全員にそう見えているとは限りません。</p>
+    <p>日本では男性のおよそ20人に1人が、赤と緑の区別がつきにくい色覚を持つといわれています。数十人の部署なら、資料を受け取る誰かがそうである可能性は十分にあり、本人がそれを周りに伝えていないことも珍しくありません。見本のスイッチをオンにして、見え方を比べてみてください。</p>
+
+    <div class="demo" id="demo-redgreen">
+      <p class="demo-label">見本　拠点別の定時配送率</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>色だけで区別</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>形と文字も添える</button>
+      </div>
+      <label class="switch">色の区別がつきにくい人の見え方（近似）<input type="checkbox" name="sim"></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>色は「違いがあること」を一瞬で伝えるのは得意ですが、「その違いが何を意味するか」までは伝えられません。赤が悪く緑が良いという意味は、経験で覚えた約束事にすぎないからです。色の区別がつかなければ、その約束事ごと情報が消えてしまいます。</p>
+    <p>OK版では、丸と三角という形、「達成」「未達」という文字、そして色の3つで同じ情報を伝えています。どれか1つが届かなくても、残りで意味が伝わります。白黒で印刷したときに読めるのも同じ理由です。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>良し悪しは色だけで表さず、形や文字を必ず添える。色で分けるなら、赤と緑ではなく青とオレンジにする。</p>
+    </div>
+  </section>
+
+  <!-- NG3 -->
+  <section class="sec" id="contrast">
+    <h2><span class="tag ng">NG</span>背景と文字の明るさが近く、読みにくい</h2>
+    <p>淡いグレーの文字は上品に見えるので、本文や注釈によく使われます。白地に黄色の文字も、目立たせたいときに選びがちです。画面ではきれいに見えても、プロジェクターで映したり白黒で印刷したりすると、ほとんど読めなくなることがあります。</p>
+    <p>文字の読みやすさを決めるのは、色の種類ではなく、背景との明るさの差です。人の目は文字の形を明暗の境目として捉えているため、差が小さいと輪郭がぼやけ、読むたびに目を凝らすことになります。一文ずつは読めても、資料全体ではその小さな負担が積み重なります。</p>
+
+    <div class="demo" id="demo-contrast">
+      <p class="demo-label">見本　文字色と読みやすさ</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="文字色の切替">
+        <button data-value="gray" aria-pressed="true"><span class="mark" style="color:var(--ng)">NG</span>薄いグレー</button>
+        <button data-value="yellow" aria-pressed="false"><span class="mark" style="color:var(--ng)">NG</span>黄色</button>
+        <button data-value="dark" aria-pressed="false"><span class="mark" style="color:var(--ok)">OK</span>濃いグレー</button>
+      </div>
+      <div class="control">
+        <div class="control-row"><span>文字の明るさ（グレー）</span></div>
+        <input type="range" min="34" max="221" value="187" aria-label="文字の明るさ">
+        <div class="control-row"><span>白背景とのコントラスト比</span><span><output>-</output><span class="verdict"></span></span></div>
+      </div>
+      <p class="demo-note">スライダーを左右に動かして、読みやすさが急に変わる境目を探してみてください。</p>
+    </div>
+
+    <div class="term">
+      <b>コントラスト比</b>
+      <p>文字色と背景色の明るさの比。同じ色同士の1:1から、白と黒の21:1までの値をとります。Webの読みやすさの国際的な指針（WCAG）では、本文は4.5:1以上が目安とされています。</p>
+    </div>
+    <p>黄色は鮮やかでも、それ自体がとても明るい色なので、白地との明るさの差がほとんどありません。目立たせたいときは黄色を文字に使わず、文字は濃い色のまま、太さや大きさで強調するほうが確実です。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>白背景の文字は、コントラスト比4.5:1以上の濃いグレーか黒にする。薄いグレーと黄色は文字に使わない。</p>
+    </div>
+  </section>
+
+  <!-- 理屈：3色構成と面積比 -->
+  <section class="sec" id="ratio">
+    <h2>色は3つの役割に分け、量で使い分ける</h2>
+    <p>色を絞るといっても、何色まで使ってよく、それぞれをどれくらいの量で使えばよいのでしょうか。目安になるのが、色を「ベース・メイン・アクセント」の3つの役割に分ける考え方です。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>役割</th><th>使う場所</th><th>面積の目安</th></tr></thead>
+        <tbody>
+          <tr><td>ベース</td><td>背景、本文の文字</td><td>約70%</td></tr>
+          <tr><td>メイン</td><td>見出し、グラフの基本色、図形</td><td>約25%</td></tr>
+          <tr><td>アクセント</td><td>一番伝えたい数字、強調する1本の棒</td><td>約5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>アクセントが目立つのは、少ないからです。前の節で見たとおり、目を引く正体は「周りと違うこと」なので、アクセントの面積が増えるほど、その力は弱まっていきます。スライダーで、アクセント色を使う場所を1か所から5か所まで増やしてみてください。</p>
+
+    <div class="demo" id="demo-ratio">
+      <p class="demo-label">見本　アクセント色を使う場所の数</p>
+      <div class="slide"></div>
+      <div class="control">
+        <div class="control-row"><span>アクセント色の使用</span><output>-</output></div>
+        <input type="range" min="1" max="5" step="1" value="1" aria-label="アクセント色を使う場所の数">
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>メインの色は1色で十分です。変化をつけたいときは別の色を足すのではなく、メインを白に近づけた「薄色」を使います。見本のカードの背景がそれで、同じ色の仲間なのでまとまりを崩さずに区切りを作れます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>アクセント色は1スライド1〜2か所まで。迷ったら、アクセントを使わずメインとグレーだけで作る。</p>
+    </div>
+  </section>
+
+  <!-- すぐ使える型 -->
+  <section class="sec" id="palettes">
+    <h2>すぐ使える型：おすすめの配色パターン</h2>
+    <p>ここからは、そのまま使える配色です。同じスライドに4つのパターンを当てはめて比べられます。「自社色」を選ぶと、好きな色をメインにしたときのパレットを自動で作ります。</p>
+
+    <div class="demo" id="demo-palette">
+      <p class="demo-label">見本　パターンを切り替える</p>
+      <div class="slide"></div>
+      <div class="seg seg-4" role="group" aria-label="配色パターンの切替">
+        <button data-value="navy" aria-pressed="true">ネイビー</button>
+        <button data-value="green" aria-pressed="false">グリーン</button>
+        <button data-value="mono" aria-pressed="false">モノトーン</button>
+        <button data-value="custom" aria-pressed="false">自社色</button>
+      </div>
+      <div class="color-input-row" hidden>
+        <input type="color" value="#0B6E79" aria-label="メインにする色">
+        <span>メインにする色を選ぶ</span>
+      </div>
+      <p class="demo-note palette-info"></p>
+    </div>
+
+    <p>色の見本をタップすると、色コードをコピーできます。文字色はどのパターンでも #333333（真っ黒より目にやさしい濃いグレー）、強調しない要素は #BFC5CD のグレーがおすすめです。</p>
+
+    <div class="palettes">
+      <div class="palette">
+        <div class="palette-head"><b>信頼ネイビー</b><span>報告・提案向け</span></div>
+        <div class="chips">
+          <button class="chip" data-hex="#1F3A5F"><span class="sw" style="background:#1F3A5F"></span><span class="role">メイン</span><span class="hex">#1F3A5F</span></button>
+          <button class="chip" data-hex="#E8EEF5"><span class="sw" style="background:#E8EEF5"></span><span class="role">薄色</span><span class="hex">#E8EEF5</span></button>
+          <button class="chip" data-hex="#F28C28"><span class="sw" style="background:#F28C28"></span><span class="role">アクセント</span><span class="hex">#F28C28</span></button>
+        </div>
+      </div>
+      <div class="palette">
+        <div class="palette-head"><b>落ち着きグリーン</b><span>物流・環境系</span></div>
+        <div class="chips">
+          <button class="chip" data-hex="#2E6B4F"><span class="sw" style="background:#2E6B4F"></span><span class="role">メイン</span><span class="hex">#2E6B4F</span></button>
+          <button class="chip" data-hex="#EAF3EE"><span class="sw" style="background:#EAF3EE"></span><span class="role">薄色</span><span class="hex">#EAF3EE</span></button>
+          <button class="chip" data-hex="#D9822B"><span class="sw" style="background:#D9822B"></span><span class="role">アクセント</span><span class="hex">#D9822B</span></button>
+        </div>
+      </div>
+      <div class="palette">
+        <div class="palette-head"><b>モノトーン＋1色</b><span>数字を見せたいとき</span></div>
+        <div class="chips">
+          <button class="chip" data-hex="#333333"><span class="sw" style="background:#333333"></span><span class="role">メイン</span><span class="hex">#333333</span></button>
+          <button class="chip" data-hex="#F2F2F2"><span class="sw" style="background:#F2F2F2"></span><span class="role">薄色</span><span class="hex">#F2F2F2</span></button>
+          <button class="chip" data-hex="#C0392B"><span class="sw" style="background:#C0392B"></span><span class="role">アクセント</span><span class="hex">#C0392B</span></button>
+        </div>
+      </div>
+    </div>
+
+    <h3>自社カラーで作るときの手順</h3>
+    <p>社内資料では、コーポレートカラーをメインに置くのがいちばん自然です。残りの2色は、メインから計算して決めると全体がまとまります。</p>
+    <ol class="steps">
+      <li>コーポレートカラーをメインにする。</li>
+      <li>薄色は、メインを白で9割ほど薄めた色にする。PowerPointの「色の設定」で、同じ色の明るさを上げると作れます。</li>
+      <li>アクセントは、色相環でメインの反対側にある色にする。青系のメインならオレンジ系です。ただし、赤と緑の組み合わせにならないよう注意します。</li>
+      <li>アクセントを文字に使う場合は、白地でのコントラスト比が足りているか確認する。明るすぎる場合は少し暗くします。</li>
+    </ol>
+  </section>
+
+  <!-- 設定手順 -->
+  <section class="sec" id="howto">
+    <h2>PowerPoint・Excelでの設定</h2>
+    <p>決めた配色は、ファイルの「配色」として登録しておくと、色を選ぶたびに候補の先頭に並びます。毎回色コードを入力する手間がなくなり、スライドごとに色がぶれることも防げます。</p>
+    <h3>PowerPointで配色を登録する</h3>
+    <ol class="steps">
+      <li>「デザイン」タブの「バリエーション」グループの右下にある▼を開き、「配色」→「色のカスタマイズ」を選ぶ。</li>
+      <li>「テキスト/背景：濃色1」に文字色（#333333）、「テキスト/背景：淡色1」に白を設定する。</li>
+      <li>「アクセント1」にメイン、「アクセント2」にアクセント、「アクセント3」にグレー（#BFC5CD）を設定する。</li>
+      <li>名前を付けて保存する。グラフを挿入すると、アクセント1から順に使われます。</li>
+    </ol>
+    <p>色コードを直接入力するときは、図形の「塗りつぶし」→「塗りつぶしの色」→「ユーザー設定」タブを開くと、16進数の入力欄に「#1F3A5F」の形で入力できます。</p>
+    <h3>Excelで配色を登録する</h3>
+    <p>「ページレイアウト」タブ →「配色」→「色のカスタマイズ」から、PowerPointと同じ手順で登録できます。グラフで1本だけ色を変えたいときは、棒を1回クリックして系列全体を選び、もう1回クリックしてその1本だけを選んでから塗りつぶしの色を変えます。</p>
+  </section>
+
+  <!-- チェックリスト -->
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <p>資料を仕上げる前に、配色について確認する項目です。チェックした状態は保存されるので、資料を作りながら使ってください。</p>
+    <ul class="checklist" data-key="ch05">
+      <li><label><input type="checkbox" data-id="roles">使っている色が、ベース・メイン・アクセントの3つの役割に収まっている</label></li>
+      <li><label><input type="checkbox" data-id="accent">アクセント色は1スライド1〜2か所だけになっている</label></li>
+      <li><label><input type="checkbox" data-id="gray">強調しない要素はグレーに下げている</label></li>
+      <li><label><input type="checkbox" data-id="shape">良し悪しを色だけで表さず、形や文字を添えている</label></li>
+      <li><label><input type="checkbox" data-id="redgreen">赤と緑の組み合わせを避けている</label></li>
+      <li><label><input type="checkbox" data-id="contrast">文字は濃いグレーか黒で、薄いグレーや黄色を使っていない</label></li>
+      <li><label><input type="checkbox" data-id="consistent">同じ意味のものは、全スライドで同じ色になっている</label></li>
+      <li><label><input type="checkbox" data-id="mono">白黒で印刷しても内容が読み取れる</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch05">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <!-- AIへの指示文 -->
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIに資料を作らせるとき、依頼文の最後に貼り付けて使います。色コードは自社のものに置き換えてください。</p>
+    <div class="copybox"><div id="prompt-ch05">配色は次のルールで統一してください。
+・背景は白、文字は #333333 にする
+・メインカラーは #1F3A5F、区切りや背景の面には薄色 #E8EEF5 を使う
+・アクセントカラー #F28C28 は、各スライドで最も伝えたい1か所（数字や1本の棒など）だけに使う
+・強調しない要素はグレー #BFC5CD にする
+・良し悪しを赤と緑の色だけで区別せず、形や文字を必ず添える
+・薄いグレーや黄色を文字色に使わない</div><button class="btn" data-copy-target="prompt-ch05">コピー</button></div>
+  </section>
+
+  <!-- 練習課題 -->
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>下は、各倉庫の月別出荷量を報告するためのスライドです。この章で学んだことを使うと、どこをどう直せるでしょうか。直したい点を3つ以上考えてから、答えを見てください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>まず、3本の線の色を減らしました。課題のスライドは3本とも鮮やかな色で、しかも赤と緑の組み合わせです。伝えたいのは西倉庫の急増なので、西倉庫だけをアクセント色にし、残りの2本はグレーに下げました。</p>
+        <p>次に、凡例をやめて、線の右端に倉庫名と数値を直接書きました。凡例があると、読み手は線と凡例の間を何度も目で往復して、色と名前を照らし合わせることになります。名前が線のそばにあれば、その往復がなくなります。</p>
+        <p>最後に、赤いタイトルと黄色の吹き出しをやめました。タイトルを赤くしても内容は伝わらず、黄色の地に赤い文字は強調の重ねすぎです。伝えたいことは「西倉庫の出荷量が7月以降に急増」という文章としてタイトルに書き、色はメインのネイビーにしています。</p>
+        <p class="small">目盛り線を消したり、タイトルを結論の文にしたりする直し方は、第7章（グラフ）と第1章（メッセージ）で詳しく扱います。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/demos/ch05.js"></script>
+</body>
+</html>
