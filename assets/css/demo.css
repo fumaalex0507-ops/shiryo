@@ -311,3 +311,40 @@ input[type="range"] {
 
 /* ぼかして確かめる */
 .slide.blurred svg { filter: blur(var(--blur, 0px)); }
+
+/* 付録B：指示文の選択リスト */
+.prompt-list { list-style: none; padding: 0; margin: 12px 0; }
+.prompt-list li { border-bottom: 1px solid var(--line); padding: 4px 0 8px; }
+.prompt-list label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+.prompt-list input { width: 22px; height: 22px; accent-color: var(--main); flex: none; margin: 0; }
+.prompt-list details { margin-left: 34px; font-size: 14px; color: var(--text-sub); }
+.prompt-list summary { cursor: pointer; min-height: 32px; color: var(--main); }
+.prompt-list .prompt-text { white-space: pre-wrap; padding: 8px 0 4px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+
+/* 付録B：直しの指示 */
+.fix-list { list-style: none; padding: 0; margin: 12px 0; }
+.fix-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.fix-list .when { grid-column: 1 / -1; font-size: 13px; color: var(--text-sub); }
+.fix-list .fix-text { font-size: 15px; }
+.fix-list button { min-height: 40px; font-size: 13px; padding: 0 12px; }
+
+/* 付録A：チートシート */
+.cs-grid { display: grid; gap: 10px; margin: 12px 0; }
+.cs-item { border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.cs-item b { display: block; font-size: 15px; margin-bottom: 2px; }
+.cs-item p { margin: 0; font-size: 14px; color: var(--text-sub); line-height: 1.7; }
+.thumbs.cs-thumbs { grid-template-columns: 1fr 1fr 1fr; }

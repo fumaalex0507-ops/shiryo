@@ -11,6 +11,6 @@ window.SHIRYO_CHAPTERS = [
   { id: "ch07", no: "第7章", title: "グラフ", desc: "選び方、装飾を削る、誤解を招かない", href: "chapters/07-chart.html", ready: true, sections: 10, group: "見た目を整える" },
   { id: "ch08", no: "第8章", title: "図解とエクセル表", desc: "矢印、比較・フロー、見やすい表", href: "chapters/08-diagram-table.html", ready: true, sections: 10, group: "見た目を整える" },
   { id: "ch09", no: "第9章", title: "仕上げチェック", desc: "はみ出し・ズレ・統一感の最終確認", href: "chapters/09-final-check.html", ready: true, sections: 10, group: "仕上げる" },
-  { id: "appA", no: "付録A", title: "チートシート", desc: "すぐ使える型を1画面に", href: "appendix/cheatsheet.html", ready: false, group: "付録" },
-  { id: "appB", no: "付録B", title: "AI指示テンプレート集", desc: "型をAIに守らせる指示文", href: "appendix/ai-prompts.html", ready: false, group: "付録" }
+  { id: "appA", no: "付録A", title: "チートシート", desc: "すぐ使える型を1画面に", href: "appendix/cheatsheet.html", ready: true, sections: 8, group: "付録" },
+  { id: "appB", no: "付録B", title: "AI指示テンプレート集", desc: "型をAIに守らせる指示文", href: "appendix/ai-prompts.html", ready: true, sections: 5, group: "付録" }
 ];

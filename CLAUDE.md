@@ -246,3 +246,15 @@ GitHub Pagesは誰でも閲覧できる公開サイトになる。
 6. PWA設定とGitHub Pagesへのデプロイ、ホーム画面追加の動作確認
 
 各ステップの終わりに、作ったものと次にやることを短く報告すること。
+
+---
+
+## 10. 実装メモ（作成済みの仕組み）
+
+- 全章（序章〜第9章）と付録A・Bは作成済み。追加・修正時は以下に従う
+- `assets/js/chapters.js`：章の一覧。`sections` は各ページの `.sec[id]` の数と一致させる（目次の既読数に使う）
+- `assets/js/prompts.js`：AIへの指示文の元データ。各章の `<div class="copybox" data-prompt="章id">` と付録Bが共通で使う
+- `assets/js/kit.js`：見本スライド（960×540のSVG）を描く共通部品。`K.demo(id, render)` でBefore/After切替をつなぐ
+- `assets/js/demos/章.js`：章ごとの動く見本
+- 見本の「OK例」は自社カラー（メイン #3A8048／薄色 #EAF0D2／アクセント #E8B44A／文字用アクセント #9A6E14）で描く。社名・ロゴは載せない
+- 内容を更新したら `sw.js` の `VERSION` を上げ、新しいファイルは `FILES` に追加する
