@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第1章 メッセージと構成｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch01">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第1章 メッセージと構成</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 1</p>
+      <h1>メッセージと構成</h1>
+    </div>
+    <p>スライドのタイトルは、資料の中で最もよく読まれる場所です。忙しい読み手は、タイトルだけを拾い読みして資料をめくっていきます。ところが多くの資料では、この一番大事な場所に「〇〇について」のようなテーマ名しか書かれていません。</p>
+    <p>この章では、タイトルに<strong>結論を文章で書く</strong>方法と、その結論を並べて資料全体を組み立てる方法を扱います。タイトルを上から順に読むだけで話の筋が分かる資料は、それだけで伝わる力が大きく変わります。</p>
+  </section>
+
+  <section class="sec" id="topic">
+    <h2><span class="tag ng">NG</span>タイトルがテーマ名で、結論がない</h2>
+    <p>「誤出荷の状況について」「配送コストの推移」のようなタイトルは、何についてのスライドかは教えてくれますが、そこから何が言えるのかは教えてくれません。結論を考える仕事が、読み手に丸投げされている状態です。</p>
+
+    <div class="demo" id="demo-topic">
+      <p class="demo-label">見本　同じグラフ、違うタイトル</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>テーマ名</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>結論の文</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人はグラフを見るとき、何かの仮説を持っているほうが速く正確に読めます。「誤出荷が4割減った」と先に知っていれば、目は自然に7月以降の棒の低さを確かめにいきます。仮説がないままグラフを見ると、どの棒に注目すべきかを探すところから始めなければなりません。</p>
+    <p>さらに、テーマ名のタイトルだと、作り手と読み手で違う結論を読み取ってしまう危険もあります。作り手は「導入の効果」を言いたかったのに、読み手は「6月がなぜ多いのか」に気を取られる、ということが起こります。</p>
+    <div class="term">
+      <b>メッセージライン</b>
+      <p>スライドのタイトル位置に書く、そのスライドの結論を表した1文のこと。この本では「結論の文」とも呼びます。</p>
+    </div>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>タイトルには、そのスライドから言える結論を1文で書く。「〜について」「〜の推移」で終わらせない。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="multi">
+    <h2><span class="tag ng">NG</span>1枚に論点が3つある</h2>
+    <p>「1枚にまとめてほしい」と言われると、複数の話を1枚に詰め込みたくなります。しかし、論点が複数あるスライドには、1文の結論を書くことができません。タイトルに書けないということは、そのスライドで何を言いたいのかが定まっていないということです。</p>
+
+    <div class="demo" id="demo-multi">
+      <p class="demo-label">見本　論点の分け方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>1枚に3つ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>1枚に1つ</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>3つの話が同じ重さで並んでいると、読み手はどれが大事なのかを判断できず、結局どれも印象に残りません。1枚1論点にすれば、それぞれのスライドで1つの結論だけを考えればよくなり、読み手の頭の負担が減ります。</p>
+    <p>どうしても1枚にまとめたいときは、3つの論点を並べたうえで、タイトルに「3つの論点をまとめると何が言えるか」を書きます。たとえば「コストは増えたが、品質と人手の対策は効果が出始めている」のような1文です。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>タイトルに1文で結論が書けないスライドは、論点ごとに分ける。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="builder">
+    <h2>メッセージラインの組み立て方</h2>
+    <p>結論の文が思いつかないときは、部品を組み合わせて作ると楽です。基本の形は「理由や打ち手により、何が、どれだけ、どうなった（どうする）」です。下の欄に入力すると、文が組み上がります。</p>
+    <div class="demo" id="demo-builder">
+      <p class="demo-label">入力　メッセージラインを作る</p>
+      <label class="field">理由や打ち手（〜により）<input name="why" value="ハンディ検品の導入" placeholder="例：ハンディ検品の導入"></label>
+      <label class="field">何が<input name="subj" value="誤出荷" placeholder="例：誤出荷"></label>
+      <label class="field">どれだけ（数字）<input name="num" value="約4割" placeholder="例：約4割"></label>
+      <label class="field">どうなった・どうする<input name="change" value="減った" placeholder="例：減った"></label>
+      <div class="result-line"></div>
+      <p class="demo-note builder-note"></p>
+    </div>
+    <p>良いメッセージラインには、3つの条件があります。読むだけで結論が分かること、数字で大きさが分かること、そして30字前後に収まっていることです。長すぎるタイトルは、それ自体が読みにくくなります。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>悪い例</th><th>良い例</th></tr></thead>
+        <tbody>
+          <tr><td>配送コストについて</td><td>燃料費の上昇で、配送コストが前年比6%増えた</td></tr>
+          <tr><td>倉庫の保管状況</td><td>拠点Bの保管効率が76%と、3拠点で最も低い</td></tr>
+          <tr><td>改善策の検討</td><td>午後の人員を増やせば、出荷遅れを半分にできる</td></tr>
+          <tr><td>今後の進め方</td><td>4月から関東3拠点で、6か月の試行を始めたい</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="pyramid">
+    <h2>結論を先に、根拠を後に</h2>
+    <p>1枚ずつのタイトルが結論になったら、次は資料全体の並べ方です。学校のレポートのように「背景→データ→考察→結論」と積み上げる順番は、読み手に最後まで付き合ってもらえる前提の並べ方です。仕事の資料では、結論を先に置くほうが確実に伝わります。</p>
+
+    <div class="demo" id="demo-pyramid">
+      <p class="demo-label">見本　スライドの並べ方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="last" aria-pressed="true"><span class="mark" style="color:var(--ng)">NG</span>結論が最後</button>
+        <button data-value="first" aria-pressed="false"><span class="mark" style="color:var(--ok)">OK</span>結論が先</button>
+      </div>
+      <p class="demo-note">2つの並べ方を切り替えて比べてください。</p>
+    </div>
+
+    <p>結論を先に知った読み手は、その後に続くデータを「結論が正しいかを確かめる材料」として読めます。読む目的がはっきりしているので、情報が頭の中で整理されながら入ってきます。会議で時間が足りなくなって途中で終わっても、結論だけは伝わっているという安心感もあります。</p>
+    <div class="term">
+      <b>ピラミッド構成</b>
+      <p>一番上に結論を置き、その下に結論を支える根拠を2〜3個、さらにその下に根拠を支えるデータを置く組み立て方。上から読んでも、下から確かめても筋が通るのが特徴です。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="summary">
+    <h2>冒頭に置く「サマリー」の型</h2>
+    <p>結論を先に伝える一番簡単な方法は、表紙の次に「サマリー」のスライドを1枚置くことです。資料全体の結論と、その根拠、お願いしたいことを1枚にまとめます。部長がこの1枚だけを読んで判断できる状態を目指します。</p>
+    <div class="demo">
+      <p class="demo-label">見本　サマリーのスライド</p>
+      <div class="slide" id="summary-slide"></div>
+      <p class="demo-note">タイトルに全体の結論、本文に「現状・打ち手・効果・お願い」を1行ずつ書いています。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="template">
+    <h2>すぐ使える型：メッセージラインの4パターン</h2>
+    <p>メッセージラインは、言いたいことの種類によって形がだいたい決まっています。迷ったら、どのパターンに当てはまるかを考えてみてください。</p>
+    <div class="cards">
+      <div class="card"><b>増減型</b><p>「〇〇により、△△が□%増えた／減った」<br>例：ハンディ検品の導入で、誤出荷が約4割減った</p></div>
+      <div class="card"><b>比較型</b><p>「〇〇は△△より□□が高い／低い」<br>例：拠点Bの保管効率は76%と、3拠点で最も低い</p></div>
+      <div class="card"><b>原因型</b><p>「〇〇の原因は△△である」<br>例：出荷遅れの原因は、午後のピッキング待ちにある</p></div>
+      <div class="card"><b>提案型</b><p>「〇〇すれば、△△できる／〇〇したい」<br>例：午後の人員を増やせば、出荷遅れを半分にできる</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの確かめ方</h2>
+    <p>メッセージラインがつながっているかは、タイトルだけを並べて読むと確かめられます。</p>
+    <ol class="steps">
+      <li>「表示」タブ →「アウトライン表示」を選ぶ。左側にスライドのタイトルと本文が文章の形で並びます。</li>
+      <li>アウトライン欄で右クリックし、「折りたたみ」→「すべて折りたたみ」を選ぶ。タイトルだけが一覧になります。</li>
+      <li>上から順に声に出して読み、1つの話としてつながるかを確かめる。つながらない箇所は、タイトルの書き方か、スライドの順番に問題があります。</li>
+    </ol>
+    <p>スライドが多いときは、「ホーム」タブ →「セクション」→「セクションの追加」で、現状・課題・打ち手のようなまとまりごとに区切っておくと、全体の流れが見やすくなります。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch01">
+      <li><label><input type="checkbox" data-id="title">すべてのスライドのタイトルが、結論の文になっている</label></li>
+      <li><label><input type="checkbox" data-id="number">タイトルに、変化や差の大きさを表す数字が入っている</label></li>
+      <li><label><input type="checkbox" data-id="length">タイトルは30字前後に収まっている</label></li>
+      <li><label><input type="checkbox" data-id="one">1枚のスライドの論点は1つになっている</label></li>
+      <li><label><input type="checkbox" data-id="summary">冒頭にサマリーがあり、全体の結論が分かる</label></li>
+      <li><label><input type="checkbox" data-id="flow">タイトルだけを順に読んで、話の筋が通る</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch01">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIは放っておくと、テーマ名のタイトルを付けがちです。最初にタイトルだけの構成案を出させると、中身を作る前に流れを確認できます。</p>
+    <div class="copybox" data-prompt="ch01"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>下のスライドのタイトルを、メッセージラインに書き換えてください。補足情報として、西倉庫では8月から新しい取引先の出荷が始まっています。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>グラフを見ると、東倉庫と北倉庫はほぼ前年並みで、西倉庫だけが大きく伸びています。このスライドで言えることは「西倉庫の伸び」なので、それを数字付きでタイトルにしました。195÷120で約1.6倍です。</p>
+        <p>理由として新しい取引先の開始も書き加えています。理由があると、読み手は「一時的な増加なのか、今後も続くのか」を判断できます。グラフも、タイトルと同じ西倉庫だけをアクセント色にして、タイトルとグラフが同じことを言うようにそろえました。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch01.js"></script>
+</body>
+</html>

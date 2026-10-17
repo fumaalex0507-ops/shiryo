@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第2章 レイアウト｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch02">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第2章 レイアウト</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 2</p>
+      <h1>レイアウト</h1>
+    </div>
+    <p>同じ文章と図を使っても、置き方しだいで資料は「整って見える」ことも「雑然として見える」こともあります。この差を生むのはセンスではなく、いくつかの決まったルールです。</p>
+    <p>人の目は、スライドを見た瞬間に、要素どうしの位置関係から「どれとどれが仲間か」「どこからどこまでが1つのまとまりか」を自動的に読み取ります。レイアウトとは、この<strong>目の自動的な読み取り</strong>を、伝えたい構造と一致させる作業です。</p>
+    <p>この章では、よくある3つの失敗を見たあと、デザインの4原則（近接・整列・反復・対比）と、そのまま使える骨格パターンを紹介します。</p>
+  </section>
+
+  <section class="sec" id="align">
+    <h2><span class="tag ng">NG</span>要素の端がそろっていない</h2>
+    <p>図形やテキストボックスをマウスで1つずつ置いていくと、左端が数ミリずつずれていきます。1つ1つは小さなずれでも、スライド全体では「なんとなく雑」という印象につながります。</p>
+
+    <div class="demo" id="demo-align">
+      <p class="demo-label">見本　端のそろえ方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>ずれている</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>そろえた</button>
+      </div>
+      <label class="switch">グリッド線を表示<input type="checkbox" name="grid"></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人の目は、端がそろったものを見ると、そこに見えない線を感じ取ります。この線があると、要素がばらばらに置かれているのではなく、1つの秩序の中に並んでいると感じられます。逆にずれがあると、目はそのずれに意味があるのではないかと探してしまい、内容と関係のないところに注意が奪われます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>すべての要素の左端を、数本の縦の線のどれかにそろえる。目分量ではなく、整列の機能を使う。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="center">
+    <h2><span class="tag ng">NG</span>何でも中央揃えにする</h2>
+    <p>中央揃えは、左右対称で整って見えるため、つい使いたくなります。しかし複数行の文章や箇条書きを中央揃えにすると、かえって読みにくくなります。</p>
+
+    <div class="demo" id="demo-center">
+      <p class="demo-label">見本　箇条書きの揃え方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>中央揃え</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>左揃え</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>横書きの文章を読むとき、目は1行を読み終えると左に戻って次の行の頭を探します。左揃えなら行頭はいつも同じ位置なので、この戻りが一瞬で済みます。中央揃えでは行の長さによって行頭の位置が変わるため、1行ごとに次の行頭を探す必要があります。</p>
+    <p>中央揃えが向いているのは、表紙のタイトルや、1行だけの大きな数字など、ごく限られた場所です。迷ったら左揃えにしておけば失敗しません。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>本文・箇条書き・見出しは左揃えにする。中央揃えは表紙や1行だけの要素に限る。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="margin">
+    <h2><span class="tag ng">NG</span>余白がなく、窮屈</h2>
+    <p>伝えたいことが多いと、スライドの端ぎりぎりまで文字や図を広げたくなります。しかし余白を削って入れた情報は、読み手にとっては「窮屈で読む気がしない」という印象のほうが先に立ちます。</p>
+
+    <div class="demo" id="demo-margin">
+      <p class="demo-label">見本　スライド端の余白</p>
+      <div class="slide"></div>
+      <div class="control">
+        <div class="control-row"><span>端からの余白（ワイド画面の場合）</span><output>-</output></div>
+        <input type="range" min="8" max="110" step="2" value="12" aria-label="スライド端からの余白">
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>余白には、内容をひとまとまりに見せる働きがあります。周りに何もない空間があると、目はその内側にあるものを1つのグループとして捉えます。余白がないと内容の外枠がはっきりせず、スライドの端と内容が混ざって見えるので、どこからどこまでを見ればよいのかがぼやけてしまいます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>スライドの端から0.5インチ（約1.3cm）以上は空ける。要素どうしの間隔は、資料全体で同じ値に決めて使う。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="four">
+    <h2>デザインの4原則を体験する</h2>
+    <p>ここまでの話は、デザインの4原則と呼ばれる考え方にまとめられます。4つとも、人の目が持つ「見た瞬間に構造を読み取る働き」をうまく使うためのものです。</p>
+    <div class="cards">
+      <div class="card"><b>近接</b><p>関係のあるものは近くに、関係のないものは離して置く。目は、近くにあるものを仲間として読み取ります。</p></div>
+      <div class="card"><b>整列</b><p>要素の端を見えない線にそろえる。そろっているものは、つながりがあるように見えます。</p></div>
+      <div class="card"><b>反復</b><p>同じ種類のものは、同じ見た目で繰り返す。見た目が同じだと、同じ扱いのものだと伝わります。</p></div>
+      <div class="card"><b>対比</b><p>重要なものと、そうでないものの差をはっきり付ける。差が小さいと、どれも同じに見えます。</p></div>
+    </div>
+    <p>下の見本では、4つの原則をそれぞれオン・オフできます。全部オンの状態から、1つずつ切ってみてください。</p>
+
+    <div class="demo" id="demo-four">
+      <p class="demo-label">見本　4原則のスイッチ</p>
+      <div class="slide"></div>
+      <label class="switch">近接（関係するものを近くに）<input type="checkbox" name="prox" checked></label>
+      <label class="switch">整列（端をそろえる）<input type="checkbox" name="align" checked></label>
+      <label class="switch">反復（同じものは同じ見た目に）<input type="checkbox" name="rep" checked></label>
+      <label class="switch">対比（重要なものを目立たせる）<input type="checkbox" name="con" checked></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <div class="term">
+      <b>ゲシュタルトの法則</b>
+      <p>人がばらばらの要素を、まとまりとして捉える仕組みを説明した心理学の考え方。近くにあるもの、似ているもの、つながっているものを、目は自動的に1つのグループとして見ます。4原則の近接と反復は、この働きを利用しています。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="patterns">
+    <h2>すぐ使える型：よく使う5つの骨格</h2>
+    <p>スライドのレイアウトは、毎回ゼロから考える必要はありません。社内資料のほとんどは、次の5つの骨格のどれかで作れます。グレーの部分に図や文章、薄い緑の部分に補足や示唆を入れるイメージです。</p>
+    <div class="thumbs">
+      <figure><div class="slide" id="pat-1"></div><figcaption>1カラム：大きな図や表を1つ見せる</figcaption></figure>
+      <figure><div class="slide" id="pat-2"></div><figcaption>左右2分割：現状と改善後など2つを比べる</figcaption></figure>
+      <figure><div class="slide" id="pat-3"></div><figcaption>3列：3つの施策や選択肢を並べる</figcaption></figure>
+      <figure><div class="slide" id="pat-4"></div><figcaption>左図右説明：図を見せながら要点を書く</figcaption></figure>
+      <figure><div class="slide" id="pat-5"></div><figcaption>上グラフ下示唆：データとそこから言えること</figcaption></figure>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>目安</th></tr></thead>
+        <tbody>
+          <tr><td>スライド端の余白</td><td>0.5インチ（約1.3cm）以上</td></tr>
+          <tr><td>まとまりどうしの間隔</td><td>0.3〜0.5インチ。資料全体で1つの値に決める</td></tr>
+          <tr><td>見出しと説明の間隔</td><td>まとまりどうしの間隔の半分以下</td></tr>
+          <tr><td>揃える線の数</td><td>縦3〜4本まで。それ以上は雑然とする</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの設定</h2>
+    <p>端をそろえる作業は、目分量ではなく機能に任せると正確で速くなります。</p>
+    <h3>複数の要素の端をそろえる</h3>
+    <ol class="steps">
+      <li>そろえたい図形やテキストボックスを、Shiftキーを押しながらクリックして複数選ぶ。</li>
+      <li>「図形の書式」タブ →「配置」→「左揃え」を選ぶ。上下にそろえるときは「上揃え」です。</li>
+      <li>間隔をそろえたいときは、同じメニューの「上下に整列」または「左右に整列」を選ぶ。3つ以上の要素が等間隔に並びます。</li>
+    </ol>
+    <h3>見えない線を表示する</h3>
+    <p>「表示」タブで「ガイド」にチェックを入れると、スライド上に動かせる補助線が表示されます。余白の位置や、列の境目にガイドを置いておけば、すべての要素をその線に合わせて置けます。図形を動かしたときに出る赤い点線（スマートガイド）も、端がそろった合図です。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch02">
+      <li><label><input type="checkbox" data-id="left">要素の左端が、数本の縦の線にそろっている</label></li>
+      <li><label><input type="checkbox" data-id="leftalign">本文と箇条書きは左揃えになっている</label></li>
+      <li><label><input type="checkbox" data-id="margin">スライドの端から0.5インチ以上の余白がある</label></li>
+      <li><label><input type="checkbox" data-id="gap">要素どうしの間隔が、資料全体で同じ値になっている</label></li>
+      <li><label><input type="checkbox" data-id="prox">見出しと説明が近く、別のまとまりとは離れている</label></li>
+      <li><label><input type="checkbox" data-id="rep">同じ種類のものは、同じ見た目で繰り返している</label></li>
+      <li><label><input type="checkbox" data-id="pattern">5つの骨格のどれかに当てはまる配置になっている</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch02">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIの出力は、中央揃えや不ぞろいな間隔になりがちです。この指示文を添えると、配置がそろいやすくなります。</p>
+    <div class="copybox" data-prompt="ch02"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>下のスライドを、この章の型で直すとしたらどうしますか。どの骨格を使うかも含めて考えてから、答えを見てください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>図と説明があるので、「左図右説明」の骨格を使いました。課題のスライドでは、図がスライドの左端に張り付き、説明は中央揃えで、下の囲みとも左端がそろっていませんでした。直した例では、左右の余白をそろえ、右側の要素はすべて同じ左端から始めています。</p>
+        <p>説明の文章も、「効果」と「進め方」の2つのまとまりに分けて、間に線を入れました。見出しと内容を近づけ、まとまりの間は広めに空けているので、どこまでが効果の話かがひと目で分かります。タイトルも、第1章の型で結論の文にしています。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch02.js"></script>
+</body>
+</html>

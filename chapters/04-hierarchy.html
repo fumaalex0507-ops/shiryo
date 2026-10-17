@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第4章 情報の階層と強調｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch04">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第4章 情報の階層と強調</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 4</p>
+      <h1>情報の階層と強調</h1>
+    </div>
+    <p>スライドの中の情報は、すべてが同じ重さではありません。必ず見てほしい結論もあれば、気になる人だけが読めばよい出典もあります。この重さの違いを見た目で表すことを、情報の「階層」と呼びます。</p>
+    <p>階層がはっきりしたスライドでは、読み手は大きくて目立つものから順に読み、必要なところで止めることができます。そのために欠かせないのが、強調を<strong>少なく使う</strong>ことです。この章では、強調しすぎの失敗と、階層の付け方を扱います。</p>
+  </section>
+
+  <section class="sec" id="allbold">
+    <h2><span class="tag ng">NG</span>全部太字、あちこちに赤字</h2>
+    <p>大事なことを伝えたい気持ちが強いほど、強調は増えていきます。この数字も大事、この言葉も大事と赤字や太字を足していくうちに、スライド全体が強調だらけになってしまいます。</p>
+
+    <div class="demo" id="demo-allbold">
+      <p class="demo-label">見本　強調の数</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>全部強調</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>1か所だけ</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>第5章の配色でも見たとおり、目が引き寄せられるのは「周りと違うもの」です。強調とは、周りとの差を作ることにほかなりません。全部を太字にすれば、太字が普通の状態になり、差は消えます。赤字が4か所あれば、4つが互いに目を引き合い、どれも特別ではなくなります。</p>
+    <p>OK版では、強調する1か所以外の文字を少しグレーに落としています。強調したい部分を強くするだけでなく、周りを弱くすることでも差は作れます。こちらのほうが、スライド全体を落ち着いた印象に保てます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>強調は1スライド1〜2か所まで。強調したい部分を強くするより、周りを弱くすることを考える。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="mixed">
+    <h2><span class="tag ng">NG</span>強調の手段を重ねがけする</h2>
+    <p>強調の数を絞っても、1か所に下線・囲み・赤字・太字・記号を全部重ねてしまうことがあります。強ければ強いほど伝わる、と考えてしまうためです。</p>
+
+    <div class="demo" id="demo-mixed">
+      <p class="demo-label">見本　強調の重ねがけ</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>全部のせ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>色と大きさだけ</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>強調の手段を重ねると、文字の周りに線や面が増え、肝心の文字そのものが読みにくくなります。「！！」や「★」のような記号も、読み手に「大げさだ」という印象を与え、かえって内容の信頼を下げてしまいます。強調は、手段の数ではなく周りとの差で決まります。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>強調の手段は1〜2つに絞る。下線・斜体・記号・囲みは重ねない。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="levels">
+    <h2>情報を大・中・小の3段階に分ける</h2>
+    <p>強調を減らしたら、残りの情報を重要度で3段階に分けます。「大」は必ず見てほしいもの、「中」は次に読んでほしいもの、「小」は興味がある人だけが読めばよいものです。スライダーで、段階の数を増やしてみてください。</p>
+
+    <div class="demo" id="demo-levels">
+      <p class="demo-label">見本　階層の段数</p>
+      <div class="slide"></div>
+      <div class="control">
+        <div class="control-row"><span>文字の大きさの段階</span><output>-</output></div>
+        <input type="range" min="1" max="3" step="1" value="1" aria-label="文字の大きさの段階">
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人は大きいものから順に見る傾向があります。3段階に分かれたスライドでは、目は「大」で結論と数字をつかみ、「中」で理由を確かめ、必要なら「小」で根拠をたどります。読み手が自分に必要な深さまで読んで止められるので、忙しい人にも、じっくり読みたい人にも対応できます。</p>
+    <p>段階を4つ以上に増やすと、かえって差が分かりにくくなります。3段階で収まらないときは、情報を減らすか、スライドを分けるサインです。</p>
+  </section>
+
+  <section class="sec" id="bignum">
+    <h2>数字は「大きな数字＋小さなラベル」で見せる</h2>
+    <p>物流の資料では、定時配送率や誤出荷件数のような数字が主役になることがよくあります。数字が主役なら、文章の中に埋もれさせず、数字そのものを大きく取り出して見せます。</p>
+
+    <div class="demo" id="demo-bignum">
+      <p class="demo-label">見本　KPIの見せ方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>文章の中</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>大きな数字</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>数字を大きく、単位と説明を小さくすると、読み手はまず数字を受け取り、意味を知りたいときだけラベルを読めます。単位まで同じ大きさにすると、数字の印象が薄まるので、単位は数字の半分以下の大きさにするのがコツです。3つの数字のうち特に伝えたい1つだけを、アクセント色にしています。</p>
+  </section>
+
+  <section class="sec" id="priority">
+    <h2>強調の手段には優先順位がある</h2>
+    <p>強調の手段はいくつかありますが、それぞれに向き不向きがあります。同じ文章を、手段を変えて強調した例を切り替えてみてください。</p>
+
+    <div class="demo" id="demo-priority">
+      <p class="demo-label">見本　強調の4つの手段</p>
+      <div class="slide"></div>
+      <div class="seg seg-4" role="group" aria-label="強調の手段の切替">
+        <button data-value="color" aria-pressed="true">1. 色</button>
+        <button data-value="size" aria-pressed="false">2. 大きさ</button>
+        <button data-value="bold" aria-pressed="false">3. 太字</button>
+        <button data-value="box" aria-pressed="false">4. 囲み</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>おすすめの順番は、色、大きさ、太字、囲みの順です。色は文章の流れを崩さずに最もはっきり目立ちます。大きさは強力ですが、文中で使うと行の高さが乱れるので、数字や見出しのような独立した要素に向いています。太字は日本語の細かい文字では潰れやすく、囲みは線が増えて雑然としやすいので、後ろの順番になります。</p>
+  </section>
+
+  <section class="sec" id="template">
+    <h2>すぐ使える型：階層と強調の目安</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>段階</th><th>使う場所</th><th>見た目の目安</th></tr></thead>
+        <tbody>
+          <tr><td>大</td><td>結論（タイトル）、主役の数字</td><td>本文の1.5〜2倍。数字は2.5倍以上も可。太字</td></tr>
+          <tr><td>中</td><td>見出し、理由、小見出し</td><td>本文と同じか少し大きく。太字</td></tr>
+          <tr><td>本文</td><td>説明の文章</td><td>配布資料なら14〜18pt</td></tr>
+          <tr><td>小</td><td>出典、注記、単位</td><td>本文の7割程度。グレー</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>強調の数は1スライド1〜2か所まで、手段は「色」を第一候補にし、必要なら「大きさ」を組み合わせます。強調しない部分は #666666 程度のグレーに落とすと、強調が自然に浮かび上がります。</p>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの設定</h2>
+    <p>強調を減らすときや、書式をそろえるときに便利な機能です。</p>
+    <ol class="steps">
+      <li>強調を一度リセットしたいときは、文字を選んで「ホーム」タブの「すべての書式をクリア」（Aと消しゴムのアイコン）を押す。太字・色・下線がまとめて外れます。</li>
+      <li>決めた強調の書式を他の場所にも使うときは、強調した文字を選び、「ホーム」タブの「書式のコピー/貼り付け」（刷毛のアイコン）をダブルクリックする。続けて何か所にも同じ書式を貼れます。Escキーで終了します。</li>
+      <li>強調しない文字をグレーにするときは、「フォントの色」→「その他の色」→「ユーザー設定」で #666666 を指定する。</li>
+    </ol>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch04">
+      <li><label><input type="checkbox" data-id="count">強調は1スライド1〜2か所までになっている</label></li>
+      <li><label><input type="checkbox" data-id="layer">1か所に、複数の強調手段を重ねていない</label></li>
+      <li><label><input type="checkbox" data-id="mark">「！！」「★」などの記号を強調に使っていない</label></li>
+      <li><label><input type="checkbox" data-id="levels">情報が大・中・小の3段階に分かれている</label></li>
+      <li><label><input type="checkbox" data-id="kpi">主役の数字は、大きな数字と小さなラベルで見せている</label></li>
+      <li><label><input type="checkbox" data-id="gray">出典や注記は、小さくグレーにしている</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch04">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIは重要そうな言葉をすべて太字にしがちです。強調の数と手段を最初に指定しておきます。</p>
+    <div class="copybox" data-prompt="ch04"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>倉庫Bの作業改善を報告するスライドです。強調の数と手段に注目して、どう直せるか考えてください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>課題のスライドでは、赤字・青字・下線・黄色の囲み・記号が合わせて7か所以上あり、すべての文が太字でした。どれも強調されているので、結局どこが大事なのか分かりません。直した例では、強調を「作業時間 −40分」の1か所に絞りました。</p>
+        <p>文章に埋もれていた3つの数字は、大きな数字と小さなラベルで横に並べています。「★他拠点への展開を検討すべき★」は記号を外し、「次の一手」として普通の太字で書きました。強い装飾がなくても、位置と大きさで十分に目立ちます。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch04.js"></script>
+</body>
+</html>

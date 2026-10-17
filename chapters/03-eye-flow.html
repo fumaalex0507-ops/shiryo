@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第3章 視線の流れ｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch03">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第3章 視線の流れ</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 3</p>
+      <h1>視線の流れ</h1>
+    </div>
+    <p>スライドを見るとき、人の目はでたらめに動いているわけではありません。横書きの文化で育った私たちは、左上から読み始め、右へ、そして下へと進むという、ほぼ決まった順番で目を動かします。</p>
+    <p>この順番を知っていれば、<strong>読ませたい順に要素を置く</strong>ことができます。逆に知らないと、一番大事な結論を、目が最後にたどり着く場所や、まったく見ない場所に置いてしまいます。この章では、視線の動き方と、それに合わせた置き場所を扱います。</p>
+  </section>
+
+  <section class="sec" id="buried">
+    <h2><span class="tag ng">NG</span>結論が右下に埋もれている</h2>
+    <p>データを並べたあと、最後にまとめとして結論を書く。文章の書き方としては自然ですが、スライドでこれをやると、結論が右下の隅に小さく置かれることになります。</p>
+
+    <div class="demo" id="demo-buried">
+      <p class="demo-label">見本　結論の置き場所</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>結論が右下</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>結論が左上</button>
+      </div>
+      <label class="switch">視線の順番を表示<input type="checkbox" name="eye" checked></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>赤い番号は、目が動くおおよその順番です。左上から読み始めた目は、グラフを見て、注記を見て、最後にようやく右下の結論にたどり着きます。会議で資料をめくる人は、ここまで来る前に次のページへ進んでしまうことも珍しくありません。</p>
+    <p>結論を左上のタイトル位置に置けば、目が最初に触れる情報が結論になります。残りの要素は、すべて「その結論の根拠」として読まれるようになります。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>結論はスライドの左上（タイトル位置）に置く。「まとめ」として右下に置かない。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="zf">
+    <h2>目の動きには「Z型」と「F型」がある</h2>
+    <p>視線の動き方には、代表的な2つの型があります。どちらになるかは、スライドの情報の量で決まります。下の見本で、2つの型を切り替えてみてください。</p>
+
+    <div class="demo" id="demo-zf">
+      <p class="demo-label">見本　視線の2つの型</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="z" aria-pressed="true">Z型（要素が少ない）</button>
+        <button data-value="f" aria-pressed="false">F型（文字が多い）</button>
+      </div>
+      <label class="switch">視線の順番を表示<input type="checkbox" name="eye" checked></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>Z型は、図や大きな数字が中心で文字が少ないスライドで起こります。目は左上から右上へ、斜めに左下へ、そして右下へと大きく動きます。このとき特に目に留まるのは、出発点の左上と、終点の右下です。左上に結論、右下に「お願い」や次の行動を置くと、両方が確実に読まれます。</p>
+    <p>F型は、文字の多いスライドで起こります。目は最初の数行を横に読みますが、下に行くにつれて行頭だけを縦に拾い読みするようになります。つまり、各行の最初の数文字しか読まれないことが多いのです。文字の多いスライドでは、行の頭に要点の言葉を置くことが大切です。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>要素が少ないスライドは、左上に結論、右下に次の行動を置く。文字の多いスライドは、行頭に要点の言葉を置く。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="compare">
+    <h2><span class="tag ng">NG</span>比較するもの同士の構図がそろっていない</h2>
+    <p>導入前と導入後、A案とB案、拠点ごとの実績。比較はスライドで最もよく使う見せ方の1つです。ところが、比べるもの同士の書き方や並び順がそろっていないことがよくあります。</p>
+
+    <div class="demo" id="demo-compare">
+      <p class="demo-label">見本　導入前後の比較</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>構図がばらばら</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>同じ構図</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>比べるという作業は、目を「同じ項目どうし」の間で往復させることです。構図がそろっていれば、目は真横に動くだけで対応する項目を見つけられます。構図がばらばらだと、左で見た「コスト」が右のどこに書いてあるのかを毎回探す必要があり、比較そのものより探す作業に頭を使ってしまいます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>比べるもの同士は、項目の順番・書き方・大きさ・形をすべて同じにして、横に並べる。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="place">
+    <h2>すぐ使える型：置き場所の地図</h2>
+    <p>ここまでの話をまとめると、スライドの場所ごとに置くべきものが決まってきます。迷ったら、この地図に当てはめて配置してください。番号は、読まれる順番の目安です。</p>
+    <div class="demo">
+      <p class="demo-label">型　スライドの置き場所</p>
+      <div class="slide" id="place-map"></div>
+      <p class="demo-note">補足や出典は、目が自然には向かいにくい左下に置くと、本筋の邪魔をしません。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="blur">
+    <h2>目を細めて確かめる</h2>
+    <p>作ったスライドが狙いどおりの順番で見られるかは、目を細めて眺めると確かめられます。細かい文字が読めなくなると、形・大きさ・色の強さだけが残り、目が最初にどこへ向かうかが分かります。デザインの現場でもよく使われる確かめ方です。</p>
+    <div class="demo" id="demo-blur">
+      <p class="demo-label">見本　ぼかして見る</p>
+      <div class="slide blurred"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>結論が右下</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>結論が左上</button>
+      </div>
+      <div class="control">
+        <div class="control-row"><span>ぼかしの強さ</span><output>-</output></div>
+        <input type="range" min="0" max="8" step="1" value="4" aria-label="ぼかしの強さ">
+      </div>
+      <p class="demo-note">ぼかした状態で一番目立つものが、最初に見られるものです。それが結論になっているかを確かめてください。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの確かめ方</h2>
+    <p>PowerPointには目を細める機能はありませんが、似た確かめ方ができます。</p>
+    <ol class="steps">
+      <li>画面右下のズームを30%程度まで下げ、スライドを小さく表示する。細部が見えなくなり、目立つものだけが残ります。</li>
+      <li>または、少し離れた位置から画面を見る。印刷して、腕を伸ばした距離で眺めるのも効果的です。</li>
+      <li>最初に目に入ったものが結論でなければ、結論の位置か大きさ、または周りの要素の強さを見直す。</li>
+    </ol>
+    <p>手順や流れを順番に読んでほしいときは、図形で番号の丸を作り、要素の左上に付けます。番号の丸は同じ大きさ・同じ色で繰り返すと（第2章の反復）、読み手はすぐに「順番に読むものだ」と理解できます。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch03">
+      <li><label><input type="checkbox" data-id="topleft">結論が左上（タイトル位置）にある</label></li>
+      <li><label><input type="checkbox" data-id="order">要素が、左上から右下へ読む順番で並んでいる</label></li>
+      <li><label><input type="checkbox" data-id="action">次の行動やお願いが、右下など視線の終点にある</label></li>
+      <li><label><input type="checkbox" data-id="linehead">文字の多いスライドでは、行頭に要点の言葉がある</label></li>
+      <li><label><input type="checkbox" data-id="compare">比較するもの同士が、同じ構図で並んでいる</label></li>
+      <li><label><input type="checkbox" data-id="squint">目を細めて見たとき、最初に目に入るのが結論になっている</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch03">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>比較のスライドをAIに作らせると、左右で書き方がそろわないことがよくあります。この指示文で、置き場所と比較の構図を指定できます。</p>
+    <div class="copybox" data-prompt="ch03"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>倉庫の移転を検討するために、2つの倉庫を比べたスライドです。視線の流れと比較の構図の観点から、どこを直せるでしょうか。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>課題のスライドでは、左右の箱で項目の順番も書き方も違いました。左は「家賃・距離・面積」、右は「面積・賃料・距離」の順で、しかも「家賃」と「賃料」のように言葉まで違います。読み手は対応する項目を探して、目を何度も往復させることになります。</p>
+        <p>直した例では、項目を左端に一度だけ書き、現在と移転候補の値を同じ高さに並べました。目は横に動くだけで差が分かります。移転候補のうち有利な値だけをアクセント色にし、不利な距離は色を付けずに、下の注記で次のページへの橋渡しをしています。</p>
+        <p>結論も、右下の小さな「移転を推奨」から、左上のタイトルに移しました。数字を入れた結論の文にしたことで、なぜ推奨するのかまで一度に伝わります。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch03.js"></script>
+</body>
+</html>
