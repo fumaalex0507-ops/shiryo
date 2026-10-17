@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第6章 文字｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch06">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第6章 文字</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 6</p>
+      <h1>文字</h1>
+    </div>
+    <p>ビジネス資料の大半は文字でできています。グラフや図にも、タイトルやラベルとして文字が付いています。そのため、文字の扱いが少し乱れるだけで、資料全体の印象が大きく崩れます。</p>
+    <p>文字で気をつけることは多くありません。フォントの種類を絞ること、大きさに段階を付けること、そして<strong>入りきらないときに文字を小さくしない</strong>ことです。この章では、この3つの失敗と、行間やフォントの選び方を扱います。</p>
+  </section>
+
+  <section class="sec" id="mixed">
+    <h2><span class="tag ng">NG</span>フォントが混在している</h2>
+    <p>別の資料からコピーして貼り付けたり、見出しを目立たせようとフォントを変えたりするうちに、1枚のスライドに何種類ものフォントが混ざることがあります。</p>
+
+    <div class="demo" id="demo-mixed">
+      <p class="demo-label">見本　フォントの数</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>混在</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>1種類</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>フォントには、それぞれ固有の雰囲気があります。明朝は改まった印象、丸ゴシックは柔らかい印象、ポップな書体はくだけた印象です。これらが混ざると、1枚のスライドの中で話し手の声色が何度も変わっているように感じられ、まとまりがなくなります。</p>
+    <p>さらに第2章の「反復」で見たように、人は見た目が違うものを「違う種類のもの」として受け取ります。同じ並びの見出しなのにフォントが違うと、読み手は「この見出しだけ何か特別なのか」と余計な意味を探してしまいます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>フォントは資料全体で1種類（多くても和文1・欧文1の2種類）にする。違いは大きさと太さで付ける。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="size">
+    <h2><span class="tag ng">NG</span>全部同じ大きさで、階層がない</h2>
+    <p>フォントを1種類にそろえても、大きさまで全部同じにすると、今度は見出しと本文の区別がつかなくなります。テキストボックスを1つ作って、そこに全部を書き込んだときによく起こります。</p>
+
+    <div class="demo" id="demo-size">
+      <p class="demo-label">見本　文字の大きさ</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>全部同じ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>段階を付ける</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>大きさの差は、読み手にとって「どれが上位の情報か」を示す目印です。見出しが本文と同じ大きさだと、読み手は1行目から順にすべてを読むしかありません。見出しが一回り大きく太ければ、見出しだけを拾い読みして、必要な部分だけ本文を読むことができます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>タイトル・見出し・本文・注記の4つの大きさを決め、資料全体でその4つだけを使う。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="shrink">
+    <h2><span class="tag ng">NG</span>入りきらないので、文字を小さくして詰め込む</h2>
+    <p>書きたいことが多くてスライドに収まらないとき、一番手軽な解決策は文字を小さくすることです。PowerPointも、テキストボックスからあふれると自動で文字を縮めてくれます。しかし、これは最も避けたい直し方です。</p>
+
+    <div class="demo" id="demo-shrink">
+      <p class="demo-label">見本　あふれたときの直し方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>縮小して詰め込む</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>削って分ける</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>小さな文字がびっしり並んだスライドを見ると、読み手は内容を読む前に「これは大変そうだ」と感じます。この第一印象だけで、読む意欲が大きく下がります。投影すれば後ろの席からは読めませんし、配布しても読み飛ばされます。</p>
+    <p>入りきらないのは、そのスライドに載せようとしている内容が多すぎるサインです。言葉を削れないか、補足を別のページや口頭に回せないか、話を2枚に分けられないかを考えます。直した例では、「結果」と「進め方」の2つの話に分け、それぞれを短い文にしました。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>文字は決めた大きさより小さくしない。入らないときは、言葉を削るか、スライドを分ける。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="leading">
+    <h2>行間は、文字の大きさの1.2〜1.5倍</h2>
+    <p>文字の大きさと同じくらい読みやすさに影響するのが、行と行の間隔（行間）です。スライダーで行間を変えて、読みやすさの変化を確かめてください。</p>
+
+    <div class="demo" id="demo-leading">
+      <p class="demo-label">見本　行間</p>
+      <div class="slide"></div>
+      <div class="control">
+        <div class="control-row"><span>行の送り（文字の大きさに対して）</span><output>-</output></div>
+        <input type="range" min="10" max="22" step="1" value="10" aria-label="行間">
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>行間が狭すぎると、1行を読み終えて次の行に目を移すとき、隣の行と混ざって読み間違えやすくなります。逆に広すぎると、行どうしのつながりが弱まり、1つの段落として読めなくなります。第2章の「近接」と同じで、行間も「まとまりに見えるかどうか」を決める距離なのです。</p>
+  </section>
+
+  <section class="sec" id="fonts">
+    <h2>日本語フォントの選び方</h2>
+    <p>社内資料で使うなら、Windowsのパソコンに最初から入っている次の3つから選ぶのが安全です。資料を受け取った人のパソコンにないフォントを使うと、別のフォントに置き換わってレイアウトが崩れるためです。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>フォント</th><th>特徴</th><th>向いている場面</th></tr></thead>
+        <tbody>
+          <tr><td>游ゴシック</td><td>Officeの標準。すっきり上品だが、標準の太さは線が細い</td><td>画面で読む資料。投影するなら「游ゴシック Medium」を使う</td></tr>
+          <tr><td>メイリオ</td><td>線が太く、画面でも読みやすい。行間が広めに取られる</td><td>投影する資料。行間は狭めに調整する</td></tr>
+          <tr><td>BIZ UDPゴシック</td><td>誰にでも読みやすいよう設計された書体。数字の判別がしやすい</td><td>数字の多い資料、配布して読む資料</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="term">
+      <b>UDフォント（ユニバーサルデザインフォント）</b>
+      <p>年齢や視力にかかわらず読み間違えにくいよう、文字の形を工夫したフォント。「3」と「8」、「6」と「9」のような似た数字も区別しやすくなっています。</p>
+    </div>
+    <p>どれを選ぶかより、1つに決めて資料全体で使い続けることのほうが大切です。部署で共通のテンプレートがあれば、それに従うのが一番です。</p>
+  </section>
+
+  <section class="sec" id="template">
+    <h2>すぐ使える型：文字の大きさと設定</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>要素</th><th>配布資料</th><th>投影資料</th></tr></thead>
+        <tbody>
+          <tr><td>タイトル（結論の文）</td><td>20〜28pt・太字</td><td>32〜40pt・太字</td></tr>
+          <tr><td>見出し</td><td>16〜20pt・太字</td><td>24〜28pt・太字</td></tr>
+          <tr><td>本文</td><td>14〜18pt</td><td>20〜24pt</td></tr>
+          <tr><td>注記・出典</td><td>10〜12pt・グレー</td><td>14〜16pt・グレー</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>行間は文字の大きさの1.2〜1.5倍、本文は左揃えにします。1行の長さは、配布資料なら30〜40字程度までに収めると、目が行頭に戻るときに迷いません。</p>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの設定</h2>
+    <h3>資料全体のフォントを決める</h3>
+    <ol class="steps">
+      <li>「デザイン」タブの「バリエーション」グループの右下にある▼を開き、「フォント」→「フォントのカスタマイズ」を選ぶ。</li>
+      <li>「日本語文字用のフォント」の見出しと本文に、同じフォント（例：BIZ UDPゴシック）を設定し、名前を付けて保存する。</li>
+      <li>以後、新しく作るテキストボックスには自動でこのフォントが使われます。</li>
+    </ol>
+    <h3>混在したフォントをまとめて直す</h3>
+    <p>「ホーム」タブの「置換」の横の▼ →「フォントの置換」を選ぶと、資料内で使われているフォントを、別のフォントに一括で置き換えられます。貼り付けで紛れ込んだフォントを見つけるのにも使えます。</p>
+    <h3>自動縮小を止める</h3>
+    <p>テキストボックスを右クリック →「図形の書式設定」→「文字のオプション」→「テキストボックス」で、「自動調整なし」を選びます。あふれたことに気づけるようになり、削るか分けるかを判断できます。行間は、段落を選んで「段落」ダイアログの「行間」を「倍数」にし、1.2などと入力します。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch06">
+      <li><label><input type="checkbox" data-id="one">フォントは1種類（多くても和文1・欧文1）になっている</label></li>
+      <li><label><input type="checkbox" data-id="std">相手のパソコンにもあるフォントを使っている</label></li>
+      <li><label><input type="checkbox" data-id="levels">タイトル・見出し・本文・注記の4つの大きさで作っている</label></li>
+      <li><label><input type="checkbox" data-id="min">決めた大きさより小さい文字がない</label></li>
+      <li><label><input type="checkbox" data-id="leading">行間は文字の大きさの1.2〜1.5倍になっている</label></li>
+      <li><label><input type="checkbox" data-id="left">本文は左揃えで、1行が長すぎない</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch06">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIに作らせると、内容を詰め込むために文字が小さくなりがちです。大きさの下限と「入らなければ分ける」ことを先に伝えます。</p>
+    <div class="copybox" data-prompt="ch06"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>出荷締め時間の変更を知らせるスライドです。文字の扱いの観点から、どこを直せるか考えてください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>課題のスライドには、ポップ体・明朝・丸ゴシック・欧文書体の4種類が混ざっていました。直した例では1種類にそろえ、違いは大きさと太さだけで付けています。</p>
+        <p>本文は小さな文字の長い文章で、一番大事な「16:00→15:30」が文章の中に埋もれていました。直した例では、時刻の変更を大きく取り出し、対象とお願いを短い文に分けて置いています。問い合わせ先のような補足は、小さくグレーにして一番下に回しました。</p>
+        <p>タイトルも「お知らせ」というテーマ名から、「出荷締めが30分早まります」という結論の文に変えています。記号で飾らなくても、内容そのものが目を引きます。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch06.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第9章 仕上げチェック｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch09">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第9章 仕上げチェック</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 9</p>
+      <h1>仕上げチェック</h1>
+    </div>
+    <p>どれだけ型どおりに作っても、提出前の資料には小さな傷が残っています。文字のはみ出し、要素の重なり、ページごとのずれ。1つ1つは小さくても、読み手は意外なほどこうした傷に気づき、資料全体の信頼を下げてしまいます。</p>
+    <p>作った本人は、自分の資料を「こう見えているはず」という思い込みで見てしまうため、傷に気づきにくいものです。この章では、その思い込みを外して<strong>読み手の目で見直す</strong>ための方法を扱います。AIが作った資料を確かめるときにも、そのまま使えます。</p>
+  </section>
+
+  <section class="sec" id="spot">
+    <h2><span class="tag ng">NG</span>はみ出し・重なり・単位の改行</h2>
+    <p>まずは、仕上げで見落としやすい傷を、自分の目で探してみましょう。下のスライドには5つの傷があります。気になるところをタップしてください。</p>
+
+    <div class="demo" id="demo-spot">
+      <p class="demo-label">見本　間違い探し</p>
+      <div class="slide"></div>
+      <p class="demo-note"></p>
+      <p style="display:flex;gap:8px;margin:12px 0 0"><button class="btn show-all">答えを全部見る</button><button class="btn reset-spot">やり直す</button></p>
+    </div>
+
+    <p>はみ出しや重なりは、作っている途中で文字を書き足したり、フォントを変えたりしたときに起こります。作り手は「ここにはこの文章が入る」と分かっているので、枠から少しはみ出していても頭の中で補って読めてしまいます。読み手にはその補いがないので、はみ出した文字はそのまま「雑な資料」の印になります。</p>
+    <p>数字と単位が改行で分かれるのも、よくある傷です。「1.2億」で行が終わると、読み手は一瞬「1.2億人なのか、1.2億件なのか」と迷います。数字と単位は、必ず同じ行に置きます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>仕上げでは、内容を読まずに「形だけ」を見る時間を取る。はみ出し・重なり・改行位置を1枚ずつ確かめる。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="consistency">
+    <h2><span class="tag ng">NG</span>同じ種類のスライドで、位置や書式がずれている</h2>
+    <p>1枚ずつ見ると問題がなくても、ページをめくったときに、タイトルの位置が少し上下したり、色が変わったりすることがあります。別の資料から持ってきたスライドを混ぜたときに、特に起こりやすい傷です。</p>
+
+    <div class="demo" id="demo-consistency">
+      <p class="demo-label">見本　2枚のスライドを比べる</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>ずれている</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>そろえた</button>
+      </div>
+      <label class="switch">重ねて比べる<input type="checkbox" name="overlay"></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>ページをめくるとき、読み手の目は前のページのタイトル位置を覚えていて、次のページでも同じ場所を最初に見ます。タイトルが毎回同じ位置にあれば、目は迷わず結論を拾えます。少しでもずれていると、ページをめくるたびにタイトルが動いて見え、落ち着かない印象になります。</p>
+    <p>このずれは、1枚ずつ見ていても見つかりません。同じ種類のスライドを並べたり、重ねたりして初めて気づけます。グラフのラベルの大きさや色、数字の書式も、同じように資料全体で比べて確かめます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>同じ種類のスライドは、並べて比べる。タイトルの位置・大きさ・色は、スライドマスターで全ページ共通にする。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="decoration">
+    <h2><span class="tag ng">NG</span>AIが付けがちな装飾が残っている</h2>
+    <p>AIに作らせたスライドには、決まって付いてくる装飾があります。タイトルの下の短い線、スライドの端に沿った色の帯、カードの端だけに付いた色。一見おしゃれに見えますが、どれも何の情報も伝えていません。</p>
+
+    <div class="demo" id="demo-deco">
+      <p class="demo-label">見本　意味のない装飾</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>装飾あり</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>装飾なし</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>意味のない線や色の帯も、目にとってはデータと同じ「見るべきもの」です。第7章のグラフで見たとおり、データ以外のインクが増えるほど、本当に伝えたいものが目立たなくなります。しかも、こうした装飾は多くのAIの出力に共通しているため、見慣れた人には「AIに作らせたままの資料だ」と分かってしまいます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>装飾は「これを消したら何が伝わらなくなるか」を考え、答えがなければ消す。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="procedure">
+    <h2>仕上げの手順</h2>
+    <p>仕上げは、一度に全部を見ようとすると見落とします。見る観点を分けて、何回かに分けて確かめるのが確実です。</p>
+    <ol class="steps">
+      <li><b>内容を見る</b>：タイトルだけを順に読み、話の筋が通っているか、数字に単位・時点・出典があるかを確かめる（第0章・第1章）。</li>
+      <li><b>形だけを見る</b>：内容は読まずに、はみ出し・重なり・改行位置・余白を1枚ずつ確かめる。</li>
+      <li><b>並べて見る</b>：スライド一覧で同じ種類のスライドを並べ、タイトルの位置・色・グラフの書式がそろっているかを比べる。</li>
+      <li><b>離れて見る</b>：画面を小さくするか印刷して、各スライドで最初に目に入るものが結論かを確かめる（第3章）。</li>
+      <li><b>白黒で見る</b>：白黒で印刷して、色だけに頼った表現がないかを確かめる（第5章）。</li>
+    </ol>
+    <p>時間がないときは、少なくとも2と3だけは行ってください。読み手が最初に気づくのは、内容の細かい誤りより、形の傷やずれだからです。</p>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>PowerPointでの確かめ方</h2>
+    <ol class="steps">
+      <li>「表示」タブ →「スライド一覧」で、全スライドを並べて見る。タイトルの位置や色のずれは、この画面で一番見つけやすくなります。</li>
+      <li>タイトルの位置を全ページでそろえるには、「表示」タブ →「スライドマスター」で、レイアウトのタイトル枠を調整する。各スライドで「ホーム」タブの「リセット」を押すと、レイアウトの位置に戻ります。</li>
+      <li>「ファイル」→「印刷」の設定で「グレースケール」を選ぶと、白黒で印刷したときの見え方を画面で確かめられる。</li>
+      <li>「校閲」タブ →「アクセシビリティチェック」を使うと、図の代替テキストの抜けや、読み上げ順の問題などを一覧で確認できる。</li>
+    </ol>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>提出前の最終チェックリスト</h2>
+    <p>この本の全章から、提出前に必ず確かめたい項目をまとめました。資料を出す前に、上から順に確認してください。</p>
+    <ul class="checklist" data-key="ch09">
+      <li><label><input type="checkbox" data-id="purpose">誰に何をしてほしいかが、資料から読み取れる（第0章）</label></li>
+      <li><label><input type="checkbox" data-id="title">すべてのタイトルが結論の文になっている（第1章）</label></li>
+      <li><label><input type="checkbox" data-id="flow">タイトルだけを読んで、話の筋が通る（第1章）</label></li>
+      <li><label><input type="checkbox" data-id="align">要素の端がそろい、余白が十分にある（第2章）</label></li>
+      <li><label><input type="checkbox" data-id="eye">各スライドで最初に目に入るのが結論になっている（第3章）</label></li>
+      <li><label><input type="checkbox" data-id="emph">強調は1スライド1〜2か所になっている（第4章）</label></li>
+      <li><label><input type="checkbox" data-id="color">色は3つの役割に収まり、白黒でも読める（第5章）</label></li>
+      <li><label><input type="checkbox" data-id="font">フォントは1種類で、小さすぎる文字がない（第6章）</label></li>
+      <li><label><input type="checkbox" data-id="chart">グラフに余計な装飾がなく、棒グラフの軸が0から始まる（第7章）</label></li>
+      <li><label><input type="checkbox" data-id="table">表は横線だけで、数字が右揃えになっている（第8章）</label></li>
+      <li><label><input type="checkbox" data-id="overflow">はみ出し・重なり・数字と単位の改行がない</label></li>
+      <li><label><input type="checkbox" data-id="same">同じ種類のスライドで、位置と書式がそろっている</label></li>
+      <li><label><input type="checkbox" data-id="deco">意味のない装飾（線・帯・記号）が残っていない</label></li>
+      <li><label><input type="checkbox" data-id="source">数字に単位・時点・出典がある</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch09">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIに資料を作らせるとき、出力の前に自分で点検させる指示文です。完成した資料を貼り付けて「この観点で問題点を挙げて」と頼み、チェック役として使うこともできます。</p>
+    <div class="copybox" data-prompt="ch09"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題：総まとめ</h2>
+    <p>最後の課題は、この本全体の総まとめです。下のスライドには、これまでの章で扱った失敗がいくつも含まれています。できるだけ多く見つけてから、答えを見てください。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>見つけてほしかった失敗</h3>
+        <p>まず、タイトルが「〜について」というテーマ名で、中央揃えでした（第1章・第2章）。結論は右下の箱の中に埋もれ、しかも最後の行は赤字と記号で強調されていました（第3章・第4章）。直した例では、結論をタイトルにして左上に置き、提案は下の帯に1文で書いています。</p>
+        <p>グラフは縦軸が100から始まっていて、西倉庫の棒が実際の差以上に短く見えていました。棒の色も3色に塗り分けられ、単位は小さく離れた場所にありました（第7章）。直した例では、軸を0から取った横棒にして、値の大きい順に並べ、西倉庫だけをアクセント色にしています。</p>
+        <p>最後に、左端の色の帯とタイトル下の線は、意味のない装飾なので消しました（第9章）。1つ1つは小さな直しですが、すべてを直すと、同じ内容がまったく違う伝わり方をすることが分かるはずです。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="end">
+    <h2>おわりに</h2>
+    <p>この本で扱った型は、どれも「読み手の目と頭の負担を減らす」という1つの考え方から生まれています。迷ったときは、細かいルールを思い出すよりも、「読み手はこのスライドを見て、最初にどこを見て、何を考えるか」を想像してみてください。</p>
+    <p>資料を作るたびに、付録のチートシートとチェックリストを開いて確かめるうちに、型は自然と手になじんでいきます。AIに作らせた資料を直すときも、ここで学んだ言葉で具体的に指示すれば、狙いどおりの資料に近づけられるはずです。</p>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch09.js"></script>
+</body>
+</html>

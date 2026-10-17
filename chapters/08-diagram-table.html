@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第8章 図解とエクセル表｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch08">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第8章 図解とエクセル表</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 8</p>
+      <h1>図解とエクセル表</h1>
+    </div>
+    <p>物流の仕事では、配送の流れや業務の手順を図にしたり、拠点ごとの実績をエクセルの表で共有したりする場面がたくさんあります。図も表も、文章では伝えにくい「関係」や「並び」を見せるための道具です。</p>
+    <p>どちらにも共通する失敗は、線や記号が意味を持たずに使われていることです。図の矢印も、表の罫線も、読み手は<strong>何かの意味がある線</strong>として読もうとします。この章では、図解と表それぞれのよくある失敗と、整え方を扱います。</p>
+  </section>
+
+  <section class="sec" id="arrows">
+    <h2><span class="tag ng">NG</span>意味のない矢印を使う</h2>
+    <p>図形を並べただけでは寂しく感じて、つい矢印でつなぎたくなります。矢印があると、図が動きを持って見えるからです。しかし矢印は、図の中で最も強い意味を持つ記号の1つです。</p>
+
+    <div class="demo" id="demo-arrows">
+      <p class="demo-label">見本　矢印の使い方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>矢印でつなぐ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>並べてまとめる</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>人は矢印を見ると、「AからBへ」という順番や因果関係を自動的に読み取ります。並行して進める3つの施策を矢印でつなげば、読み手は「共同配送が終わったらルートの見直し」という順番があると受け取ってしまいます。向きのばらばらな矢印は、さらに「どこから読むのか」という迷いを生みます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>矢印は「流れ」「因果」「変化」を表すときだけに使う。並列のものは、矢印を使わず横に並べる。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="flow">
+    <h2><span class="tag ng">NG</span>比較の図で、構図や形がそろっていない</h2>
+    <p>業務の流れを変えるときは、「現状」と「変更後」の図を並べて見せることがよくあります。ところが2つの図を別々に作ると、箱の形も配置もばらばらになり、影や立体の飾りまで付いてしまうことがあります。</p>
+
+    <div class="demo" id="demo-flow">
+      <p class="demo-label">見本　配送フローの比較</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>ばらばら</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>同じ構図</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>2つの図を比べる読み手が知りたいのは「何が変わったのか」です。構図がそろっていれば、同じ位置にある箱どうしを見比べるだけで、変わった箱がすぐに見つかります。第3章の「比較は同じ構図で」と同じ理屈です。</p>
+    <p>影や立体、グラデーションは、すべての箱に付ければ差が生まれず、一部に付ければ意味のない差が生まれます。どちらにしても、読み手の目を本当の変更点からそらしてしまいます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>比較の図は同じ形・同じ配置で並べ、変わった部分だけに色を付ける。影・立体・グラデーションは使わない。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="patterns">
+    <h2>すぐ使える型：図解の4パターン</h2>
+    <p>社内資料の図解は、次の4つのパターンでほとんど表せます。伝えたい関係に合わせて選んでください。</p>
+    <div class="thumbs">
+      <figure><div class="slide" id="pt-flow"></div><figcaption>フロー：順番や手順。矢印は一方向に</figcaption></figure>
+      <figure><div class="slide" id="pt-compare"></div><figcaption>比較：2つを同じ構図で並べる</figcaption></figure>
+      <figure><div class="slide" id="pt-matrix"></div><figcaption>マトリクス：2つの軸で分類し、位置を示す</figcaption></figure>
+      <figure><div class="slide" id="pt-tree"></div><figcaption>ツリー：大きな課題を要素に分解する</figcaption></figure>
+    </div>
+    <p>どのパターンでも、図形は平らな四角を基本にし、色はメイン・薄色・グレーの範囲で使います。箱の中の言葉は短くし、説明が必要なら図の外に書きます。</p>
+  </section>
+
+  <section class="sec" id="table">
+    <h2><span class="tag ng">NG</span>表が格子だらけで、数字が読みにくい</h2>
+    <p>エクセルで表を作ると、すべてのセルに格子の罫線を引き、見出しを濃い色で塗りたくなります。しかし、表を読みにくくしている原因の多くは、この線と色です。</p>
+
+    <div class="demo" id="demo-table">
+      <p class="demo-label">見本　表の整え方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>よくある表</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>整えた表</button>
+      </div>
+      <label class="switch">入力するセルを色分け（整えた表で表示）<input type="checkbox" name="input"></label>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>表の中で大事なのは、数字そのものと、その並びです。格子の罫線は、数字を1つずつ箱に閉じ込めてしまうので、縦に並んだ数字を比べるときに目が線で止められます。横線だけにすれば、行のまとまりは保ったまま、縦の比較がしやすくなります。</p>
+    <p>数字は右揃えにして、桁区切りのカンマを付けます。右揃えだと一の位がそろうので、桁数の違いがそのまま見た目の長さの違いになり、数字を読まなくても大小が分かります。単位は数字の横ではなく見出しに書くと、数字の列がすっきりします。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>罫線は横線だけ・薄いグレーにする。数字は右揃え・桁区切り、単位は見出しに書く。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="input">
+    <h2>共有するエクセルは「入力するセル」を分ける</h2>
+    <p>チームで共有するエクセルでは、見やすさに加えて「どこに入力すればよいか」が分かることも大切です。計算式の入ったセルに誤って数字を上書きされると、気づかないうちに集計が狂ってしまいます。</p>
+    <p>上の見本のスイッチを入れると、入力するセルだけに薄い色が付きます。人は色の付いた場所を「何かをする場所」として受け取るので、入力欄が自然に目に入り、計算式のセルには手を出さなくなります。色の意味は、表の下に一言書いておきます。</p>
+    <p>あわせて、1つのシートには1つの目的だけを持たせます。入力用のシート、集計用のシート、報告用のシートを分けておくと、共有した相手が迷わず、報告用の表をそのまま資料に貼ることもできます。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>入力するセルだけに薄い色を付け、その意味を書き添える。シートは目的ごとに分ける。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>Excel・PowerPointでの設定</h2>
+    <h3>Excelの表を整える</h3>
+    <ol class="steps">
+      <li>「表示」タブの「目盛線」のチェックを外す。画面の薄い格子が消え、自分で引いた線だけが見えるようになります。</li>
+      <li>表を選び、「ホーム」タブの罫線メニュー →「枠なし」で一度すべての罫線を消す。</li>
+      <li>「セルの書式設定」→「罫線」で、色を薄いグレーにしてから、横線だけを引く。見出しの下だけ少し濃い線にします。</li>
+      <li>数字のセルを選び、「セルの書式設定」→「表示形式」→「数値」で「桁区切り（,）を使用する」にチェックを入れる。</li>
+      <li>入力するセルは、「塗りつぶしの色」で薄い黄色などにする。</li>
+    </ol>
+    <h3>PowerPointの図形を平らにする</h3>
+    <p>図形を選び、「図形の書式」タブの「図形の効果」で、「影」「3-D回転」「面取り」をそれぞれ「なし」にします。SmartArtを使う場合は、「SmartArtのデザイン」タブのスタイルで、立体ではない平らなスタイルを選びます。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch08">
+      <li><label><input type="checkbox" data-id="arrow">矢印は「流れ・因果・変化」を表す場所だけに使っている</label></li>
+      <li><label><input type="checkbox" data-id="same">比較の図は、同じ形・同じ配置で並べている</label></li>
+      <li><label><input type="checkbox" data-id="flat">影・立体・グラデーションを使っていない</label></li>
+      <li><label><input type="checkbox" data-id="rule">表の罫線は横線だけで、薄いグレーになっている</label></li>
+      <li><label><input type="checkbox" data-id="right">数字は右揃えで、桁区切りがある</label></li>
+      <li><label><input type="checkbox" data-id="unit">単位は列の見出しに書いてある</label></li>
+      <li><label><input type="checkbox" data-id="input">共有するエクセルは、入力するセルが色分けされている</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch08">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>図解や表を含む資料を頼むときに添える指示文です。AIは飾りの矢印や格子の罫線を付けがちなので、先に止めておきます。</p>
+    <div class="copybox" data-prompt="ch08"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>倉庫別の出荷実績を共有する表です。表の整え方の観点から、どう直せるか考えてください。</p>
+    <div class="practice">
+      <p class="demo-label">課題の表</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>太い格子の罫線と赤い見出しをやめ、見出しの下の線と薄い横線だけにしました。数字は右揃えにして桁区切りを付けたので、西倉庫の195,000だけが飛び抜けていることが、数字を読む前に形で分かります。</p>
+        <p>「前年」「今年」だけでは何の数字か分からなかったので、単位の「ケース」を見出しに加え、表の下に時点と出典を書きました。「伸び」も、意味がはっきりする「前年比」に変えています。最後に、表から言えることをタイトルにし、伝えたい西倉庫の前年比だけをアクセント色にしました。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch08.js"></script>
+</body>
+</html>

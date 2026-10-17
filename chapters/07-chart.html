@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第7章 グラフ｜伝わる資料の教科書</title>
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15181C" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="資料の教科書">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-chapter="ch07">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="back" href="../index.html">‹ 目次</a>
+    <span class="where">第7章 グラフ</span>
+  </div>
+  <div class="progressbar" aria-hidden="true"><span></span></div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" id="start">
+    <div class="chapter-head">
+      <p class="num">CHAPTER 7</p>
+      <h1>グラフ</h1>
+    </div>
+    <p>グラフは、数字の並びを形に変えて、違いや変化をひと目で見せるための道具です。数字の表を読むには1つずつ頭で比べる必要がありますが、棒の長さや線の傾きなら、目が一瞬で比べてくれます。</p>
+    <p>ところが表計算ソフトの初期設定のままのグラフには、この働きを邪魔する要素がたくさん付いています。この章では、<strong>データ以外のものを削る</strong>ことを中心に、グラフでよくある失敗と、内容に合ったグラフの選び方を扱います。</p>
+  </section>
+
+  <section class="sec" id="clutter">
+    <h2><span class="tag ng">NG</span>枠線・背景・目盛り線だらけ</h2>
+    <p>グラフを挿入すると、枠線、背景色、目盛り線、凡例が最初から付いてきます。どれも何かの役に立ちそうに見えるので、そのまま使ってしまいがちです。下の見本で、初期設定に近いグラフから、余計なものを1つずつ削っていきます。</p>
+
+    <div class="demo" id="demo-declutter">
+      <p class="demo-label">見本　装飾を1ステップずつ削る</p>
+      <div class="slide"></div>
+      <div class="stepper-ctrl">
+        <button class="btn prev">前へ</button>
+        <span class="pos"></span>
+        <button class="btn next">次へ</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>グラフの中で本当に伝えたいのは、棒の長さや点の位置といったデータそのものです。枠線や目盛り線は、そのデータと同じ「線」なので、目にとってはデータと競い合う存在になります。データ以外の線が減るほど、データが浮かび上がります。</p>
+    <div class="term">
+      <b>データインク比</b>
+      <p>グラフに使われているインクのうち、データを表すために使われている割合のこと。この割合を高くする、つまりデータ以外のインクを減らすほど、グラフは分かりやすくなるという考え方です。</p>
+    </div>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>枠線と背景色は消す。目盛り線は消すか、ごく薄いグレーにする。迷ったら「これがなくても伝わるか」で判断する。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="legend">
+    <h2><span class="tag ng">NG</span>凡例とグラフを目で往復させる</h2>
+    <p>系列が複数あるグラフでは、どの線が何を表すかを示すために凡例が付きます。系列が2つ程度なら問題になりませんが、4つ、5つと増えると、読み手の目は凡例とグラフの間を何度も行き来することになります。</p>
+
+    <div class="demo" id="demo-legend">
+      <p class="demo-label">見本　系列名の書き方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>凡例</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>直接ラベル</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>凡例を読むとき、読み手は「オレンジの線は拠点B」と覚えてからグラフに戻り、オレンジの線を探します。系列が多いと、この記憶がすぐにあふれて、また凡例を見に戻ることになります。系列名を線のすぐ横に書けば、覚える必要そのものがなくなります。</p>
+    <p>なお、折れ線グラフは変化の様子を見せるものなので、この見本のように縦軸を0から始めなくても構いません。ただし、そのことは必ず書き添えます。縦軸を0から始めるべきなのは、次の節で扱う棒グラフです。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>凡例は使わず、系列名をデータのすぐ近くに書く。伝えたい系列だけに色を付け、残りはグレーにする。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="three-d">
+    <h2><span class="tag ng">NG</span>3Dグラフを使う</h2>
+    <p>立体的なグラフは見栄えがよく、資料を華やかに見せてくれそうに思えます。しかし3Dにすると、遠近感のせいで数値の大きさが正しく伝わらなくなります。</p>
+
+    <div class="demo" id="demo-3d">
+      <p class="demo-label">見本　構成比の見せ方</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="before" aria-pressed="true"><span class="mark">NG</span>3D円グラフ</button>
+        <button data-value="after" aria-pressed="false"><span class="mark">OK</span>平らな横棒</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>3Dの円グラフでは、手前にある扇形は側面まで見えるうえ、遠近法で大きく描かれます。奥にある扇形は小さく、つぶれて見えます。同じ30%でも、手前に置くだけで大きく見えてしまうのです。数字をよく見せたい側にとっては都合がよく、だからこそ読み手からは「何かをごまかしているのでは」と疑われる原因にもなります。</p>
+    <p>そもそも円グラフ自体、角度や面積の違いを目で比べるのが苦手な人が多い形です。項目の大小を比べたいなら、長さで比べられる横棒のほうが正確に伝わります。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>3Dグラフは使わない。構成比や項目の比較は、平らな横棒で見せる。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="axis">
+    <h2><span class="tag ng">NG</span>縦軸を途中から始めて、差を大きく見せる</h2>
+    <p>3つの拠点の定時配送率が、94.8%、96.1%、97.2%だったとします。棒グラフにすると差がほとんど見えないので、縦軸を94%から始めたくなります。下の見本で、3つの見せ方を比べてください。</p>
+
+    <div class="demo" id="demo-axis">
+      <p class="demo-label">見本　縦軸の始まり</p>
+      <div class="slide"></div>
+      <div class="seg" role="group" aria-label="表示の切替">
+        <button data-value="cut" aria-pressed="true"><span class="mark" style="color:var(--ng)">NG</span>途中から</button>
+        <button data-value="zero" aria-pressed="false">0から</button>
+        <button data-value="diff" aria-pressed="false"><span class="mark" style="color:var(--ok)">OK</span>差を見せる</button>
+      </div>
+      <p class="demo-note"></p>
+    </div>
+
+    <p>棒グラフでは、読み手は棒の長さそのものを値の大きさとして受け取ります。縦軸を途中から始めると、棒の長さと値が比例しなくなり、2.4ポイントの差が何倍もの差に見えてしまいます。読み手が軸の数字まで確かめるとは限りません。</p>
+    <p>見た目を整えても、データが言っていないことを言わせてしまえば、そのグラフは失敗です。差を見せたいなら、軸を切るのではなく、目標との差のように「差そのもの」をグラフにします。</p>
+    <div class="rule">
+      <span class="label">直し方のルール</span>
+      <p>棒グラフの縦軸は必ず0から始める。差を見せたいときは、差そのものをグラフにする。</p>
+    </div>
+  </section>
+
+  <section class="sec" id="choose">
+    <h2>すぐ使える型：伝えたいこと別のグラフ</h2>
+    <p>グラフの種類は、データの形ではなく「何を伝えたいか」で選びます。社内資料のほとんどは、次の4つで足ります。</p>
+    <div class="thumbs">
+      <figure><div class="slide" id="ch-bar"></div><figcaption>横棒：項目どうしを比べる。長い順に並べる</figcaption></figure>
+      <figure><div class="slide" id="ch-line"></div><figcaption>折れ線：時間とともにどう変わったかを見せる</figcaption></figure>
+      <figure><div class="slide" id="ch-stack"></div><figcaption>100%積み上げ横棒：内訳や構成比を比べる</figcaption></figure>
+      <figure><div class="slide" id="ch-slope"></div><figcaption>傾きグラフ：2時点の変化を項目ごとに比べる</figcaption></figure>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>伝えたいこと</th><th>使うグラフ</th><th>物流での例</th></tr></thead>
+        <tbody>
+          <tr><td>項目の大小</td><td>横棒</td><td>拠点別の誤出荷件数</td></tr>
+          <tr><td>時間による変化</td><td>折れ線（期間が少なければ縦棒）</td><td>月別の出荷量</td></tr>
+          <tr><td>内訳・構成比</td><td>100%積み上げ横棒</td><td>配送コストの費目別内訳</td></tr>
+          <tr><td>2時点の変化</td><td>傾きグラフ</td><td>施策の前後での拠点別積載率</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>横棒の項目は、特に理由がなければ値の大きい順に並べます。順番がそろっていると、読み手は1位から順に目で追うだけで全体を把握できます。</p>
+  </section>
+
+  <section class="sec" id="howto">
+    <h2>Excel・PowerPointでの設定</h2>
+    <ol class="steps">
+      <li>グラフを選び、右上に出る「＋」（グラフ要素）を押す。「目盛線」「凡例」のチェックを外す。必要なら「データラベル」にチェックを入れる。</li>
+      <li>グラフの枠をダブルクリックして「グラフエリアの書式設定」を開き、「塗りつぶしなし」「枠線なし」を選ぶ。</li>
+      <li>縦軸をダブルクリックし、「軸のオプション」の「最小値」が0になっているか確かめる。</li>
+      <li>1本だけ色を変えるときは、棒を1回クリックして系列を選び、もう1回クリックしてその1本だけを選んでから、塗りつぶしの色を変える。</li>
+      <li>系列名を直接書くときは、データラベルを右クリック →「データラベルの書式設定」で「系列名」にチェックを入れる。</li>
+    </ol>
+    <p>整えたグラフは、右クリック →「テンプレートとして保存」で保存しておくと、次からは「グラフの種類の変更」→「テンプレート」から同じ見た目で作れます。</p>
+  </section>
+
+  <section class="sec" id="checklist">
+    <h2>チェックリスト</h2>
+    <ul class="checklist" data-key="ch07">
+      <li><label><input type="checkbox" data-id="type">伝えたいことに合ったグラフの種類を選んでいる</label></li>
+      <li><label><input type="checkbox" data-id="frame">枠線・背景色・濃い目盛り線がない</label></li>
+      <li><label><input type="checkbox" data-id="legend">凡例を使わず、系列名をデータの近くに書いている</label></li>
+      <li><label><input type="checkbox" data-id="color">伝えたいデータだけに色があり、他はグレーになっている</label></li>
+      <li><label><input type="checkbox" data-id="3d">3Dグラフを使っていない</label></li>
+      <li><label><input type="checkbox" data-id="zero">棒グラフの縦軸が0から始まっている</label></li>
+      <li><label><input type="checkbox" data-id="title">グラフのタイトルが、読み取れる結論の文になっている</label></li>
+      <li><label><input type="checkbox" data-id="unit">単位・時点・出典が書いてある</label></li>
+    </ul>
+    <div class="checklist-meta" data-checklist-meta="ch07">
+      <span class="count"></span>
+      <button class="linkbtn reset">チェックをすべて外す</button>
+    </div>
+  </section>
+
+  <section class="sec" id="prompt">
+    <h2>AIへの指示文</h2>
+    <p>AIにグラフを作らせると、凡例付き・全系列カラフルの初期設定に近いグラフになりがちです。グラフを含む依頼にはこの指示文を添えます。</p>
+    <div class="copybox" data-prompt="ch07"></div>
+  </section>
+
+  <section class="sec" id="practice">
+    <h2>練習課題</h2>
+    <p>配送コストの内訳を示したグラフです。グラフの種類も含めて、どう直せるか考えてください。伝えたいのは「燃料費が最大の削減対象である」ことです。</p>
+    <div class="practice">
+      <p class="demo-label">課題のスライド</p>
+      <div class="slide" id="practice-before"></div>
+      <p style="margin:16px 0 0"><button class="btn primary" data-reveal="practice-answer">答えを見る</button></p>
+      <div class="answer" id="practice-answer" hidden>
+        <p class="demo-label">直した例</p>
+        <div class="slide" id="practice-after"></div>
+        <h3>直したポイント</h3>
+        <p>円グラフを、値の大きい順に並べた横棒に変えました。円グラフでは燃料費（35%）と人件費（30%）の差が角度でしか分からず、しかも数値がどこにも書かれていませんでした。横棒なら長さで比べられ、数値も棒の先に置けます。</p>
+        <p>凡例と5色の塗り分けもやめ、項目名を棒の左に直接書きました。色は伝えたい燃料費の1本だけに付け、残りはグレーにしています。背景色と枠線も消しました。</p>
+        <p>タイトルは「配送コストの内訳」から、伝えたいことそのものの文に変えています。時点と単位も、タイトルの下に添えました。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="前後の章"></nav>
+</main>
+
+<script src="../assets/js/chapters.js"></script>
+<script src="../assets/js/prompts.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/kit.js"></script>
+<script src="../assets/js/demos/ch07.js"></script>
+</body>
+</html>
