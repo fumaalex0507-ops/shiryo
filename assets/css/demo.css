@@ -173,6 +173,7 @@ input[type="range"] {
 .palette-head b { font-size: 16px; }
 .palette-head span { font-size: 13px; color: var(--text-sub); }
 .chips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.chips-4 { grid-template-columns: repeat(4, 1fr); }
 .chip {
   display: grid;
   gap: 4px;

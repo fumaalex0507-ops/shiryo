@@ -272,9 +272,22 @@
       green: { main: "#2E6B4F", light: "#EAF3EE", accent: "#D9822B" },
       mono: { main: "#333333", light: "#F2F2F2", accent: "#C0392B" }
     };
+    /* 自社カラー：会社案内の配色（グリーン・帯の薄緑・レモンイエロー）から作成 */
+    var BRAND = { main: "#3A8048", light: "#EAF0D2", accent: "#E8B44A", accentText: "#9A6E14" };
+
+    /* アクセントを文字に使うときは、白地で4.5:1以上になるまで暗くする */
+    function textSafe(hex) {
+      var hsl = rgbToHsl(hexToRgb(hex));
+      var out = hex.toUpperCase();
+      for (var l = hsl[2]; l > 0 && contrast(out, "#FFFFFF") < 4.5; l -= 0.01) {
+        out = hslToHex(hsl[0], hsl[1], l);
+      }
+      return out;
+    }
     var current = "navy";
 
     function customPalette(main) {
+      if (main.toUpperCase() === BRAND.main) return BRAND;
       var hsl = rgbToHsl(hexToRgb(main));
       var light = mix(main, "#FFFFFF", 0.9);
       /* 反対側の色相から、白地で見える明るさのアクセントを作る */
@@ -284,6 +297,7 @@
 
     function render() {
       var p = current === "custom" ? customPalette(picker.value) : PALETTES[current];
+      var accText = p.accentText || textSafe(p.accent);
       var values = [30, 42, 71, 36];
       var labels = ["4月", "5月", "6月", "7月"];
       var s = text(56, 80, "6月に返品件数が急増", { size: 32, weight: 700, fill: p.main }) +
@@ -293,7 +307,7 @@
       values.forEach(function (v, i) {
         var x = 80 + i * 112, h = v * 4, isAcc = i === 2;
         s += rect(x, base - h, 72, h, isAcc ? p.accent : p.main, ' rx="3"') +
-          text(x + 36, base - h - 12, String(v), { size: 22, anchor: "middle", weight: isAcc ? 700 : 400, fill: isAcc ? p.accent : "#555555" }) +
+          text(x + 36, base - h - 12, String(v), { size: 22, anchor: "middle", weight: isAcc ? 700 : 400, fill: isAcc ? accText : "#555555" }) +
           text(x + 36, base + 32, labels[i], { size: 18, anchor: "middle", fill: "#666666" });
       });
       s += rect(580, 160, 324, 300, p.light, ' rx="10"') +
@@ -301,9 +315,10 @@
         text(608, 266, "梱包資材の変更で", { size: 20, fill: "#333333" }) +
         text(608, 306, "破損による返品が増加", { size: 20, fill: "#333333" }) +
         text(608, 372, "前月比", { size: 18, fill: "#555555" }) +
-        text(608, 436, "+69%", { size: 46, weight: 700, fill: p.accent });
+        text(608, 436, "+69%", { size: 46, weight: 700, fill: accText });
       slide.innerHTML = svg(s);
-      info.innerHTML = "メイン <b>" + p.main + "</b>　薄色 <b>" + p.light + "</b>　アクセント <b>" + p.accent + "</b>";
+      info.innerHTML = "メイン <b>" + p.main + "</b>　薄色 <b>" + p.light + "</b>　アクセント <b>" + p.accent + "</b>" +
+        (accText !== p.accent.toUpperCase() ? "（文字に使うときは <b>" + accText + "</b>）" : "");
     }
 
     picker.addEventListener("input", render);

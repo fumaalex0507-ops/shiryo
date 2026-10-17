@@ -1,5 +1,5 @@
 /* 内容を更新したら VERSION を上げる */
-var VERSION = "shiryo-v1";
+var VERSION = "shiryo-v2";
 var FILES = [
   "./",
   "index.html",
